@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -77,11 +79,26 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SXj-Fm-WGO" customClass="UIImageViewExtension" customModule="CommonCodeSwift" customModuleProvider="target">
+                                <rect key="frame" x="113" y="81" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.20392156859999999" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SXj-Fm-WGO" secondAttribute="height" multiplier="1:1" id="Xqg-OX-hrR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="asPerWidthMakeCircle">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Zpo-Vz-8n4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="727-wv-lap"/>
+                            <constraint firstItem="SXj-Fm-WGO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ddg-RC-l3l"/>
+                            <constraint firstItem="SXj-Fm-WGO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="JuU-WK-2na"/>
                             <constraint firstItem="vBs-m0-ChR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="UBm-eR-Prh"/>
+                            <constraint firstItem="SXj-Fm-WGO" firstAttribute="top" secondItem="vBs-m0-ChR" secondAttribute="bottom" constant="20" id="W8d-fn-A5h"/>
                             <constraint firstItem="vBs-m0-ChR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Zec-Nd-Qcd"/>
                             <constraint firstItem="Zpo-Vz-8n4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cNf-Wc-fxU"/>
                             <constraint firstAttribute="trailing" secondItem="vBs-m0-ChR" secondAttribute="trailing" constant="20" id="j9h-LV-OY5"/>

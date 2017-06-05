@@ -16,6 +16,11 @@
 		4C77E6D41EE55480000ADDFA /* UILabelBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6D31EE55480000ADDFA /* UILabelBorder.swift */; };
 		4C77E6D61EE55502000ADDFA /* UILabelCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6D51EE55502000ADDFA /* UILabelCornerRadius.swift */; };
 		4C77E6DA1EE555E3000ADDFA /* UILabelClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6D91EE555E3000ADDFA /* UILabelClassExtension.swift */; };
+		4C77E6E11EE55A18000ADDFA /* UIImageExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6E01EE55A18000ADDFA /* UIImageExtended.swift */; };
+		4C77E6E61EE564C6000ADDFA /* UIImageViewBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6E51EE564C6000ADDFA /* UIImageViewBorder.swift */; };
+		4C77E6E81EE5661C000ADDFA /* UIImageViewRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6E71EE5661C000ADDFA /* UIImageViewRadius.swift */; };
+		4C77E6EA1EE56832000ADDFA /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6E91EE56832000ADDFA /* UIImageViewExtension.swift */; };
+		4C77E6EC1EE569C6000ADDFA /* UIImageViewExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6EB1EE569C6000ADDFA /* UIImageViewExtended.swift */; };
 		4C8794F11EDD52BA007EB30E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8794F01EDD52BA007EB30E /* ViewController.swift */; };
 		4C8794F41EDD52BA007EB30E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8794F21EDD52BA007EB30E /* Main.storyboard */; };
 		4C8794F71EDD52BA007EB30E /* CommonCodeSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C8794F51EDD52BA007EB30E /* CommonCodeSwift.xcdatamodeld */; };
@@ -53,6 +58,11 @@
 		4C77E6D31EE55480000ADDFA /* UILabelBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelBorder.swift; sourceTree = "<group>"; };
 		4C77E6D51EE55502000ADDFA /* UILabelCornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelCornerRadius.swift; sourceTree = "<group>"; };
 		4C77E6D91EE555E3000ADDFA /* UILabelClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelClassExtension.swift; sourceTree = "<group>"; };
+		4C77E6E01EE55A18000ADDFA /* UIImageExtended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtended.swift; sourceTree = "<group>"; };
+		4C77E6E51EE564C6000ADDFA /* UIImageViewBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewBorder.swift; sourceTree = "<group>"; };
+		4C77E6E71EE5661C000ADDFA /* UIImageViewRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewRadius.swift; sourceTree = "<group>"; };
+		4C77E6E91EE56832000ADDFA /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		4C77E6EB1EE569C6000ADDFA /* UIImageViewExtended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtended.swift; sourceTree = "<group>"; };
 		4C8794EB1EDD52BA007EB30E /* CommonCodeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonCodeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8794F01EDD52BA007EB30E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C8794F31EDD52BA007EB30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -133,6 +143,57 @@
 			path = UILabel;
 			sourceTree = "<group>";
 		};
+		4C77E6DB1EE55990000ADDFA /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				4C77E6DC1EE559C6000ADDFA /* UIImageClassEctension */,
+				4C77E6DD1EE559C6000ADDFA /* UIImageExtended */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		4C77E6DC1EE559C6000ADDFA /* UIImageClassEctension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIImageClassEctension;
+			sourceTree = "<group>";
+		};
+		4C77E6DD1EE559C6000ADDFA /* UIImageExtended */ = {
+			isa = PBXGroup;
+			children = (
+				4C77E6E01EE55A18000ADDFA /* UIImageExtended.swift */,
+			);
+			path = UIImageExtended;
+			sourceTree = "<group>";
+		};
+		4C77E6E21EE564AB000ADDFA /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				4C77E6E31EE564AB000ADDFA /* UIImageViewClassExtension */,
+				4C77E6E41EE564AB000ADDFA /* UIImageViewExtended */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		4C77E6E31EE564AB000ADDFA /* UIImageViewClassExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4C77E6E51EE564C6000ADDFA /* UIImageViewBorder.swift */,
+				4C77E6E71EE5661C000ADDFA /* UIImageViewRadius.swift */,
+				4C77E6E91EE56832000ADDFA /* UIImageViewExtension.swift */,
+			);
+			path = UIImageViewClassExtension;
+			sourceTree = "<group>";
+		};
+		4C77E6E41EE564AB000ADDFA /* UIImageViewExtended */ = {
+			isa = PBXGroup;
+			children = (
+				4C77E6EB1EE569C6000ADDFA /* UIImageViewExtended.swift */,
+			);
+			path = UIImageViewExtended;
+			sourceTree = "<group>";
+		};
 		4C8794E21EDD52BA007EB30E = {
 			isa = PBXGroup;
 			children = (
@@ -189,7 +250,9 @@
 		4C87955C1EDD95ED007EB30E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4C77E6E21EE564AB000ADDFA /* UIImageView */,
 				4C77E6D21EE5542B000ADDFA /* UILabel */,
+				4C77E6DB1EE55990000ADDFA /* UIImage */,
 				4C4E44651EE00DAD004A8F78 /* UIButton */,
 			);
 			path = Extensions;
@@ -340,15 +403,20 @@
 				4C87955F1EDD95FB007EB30E /* AppDelegate.swift in Sources */,
 				4C4E44701EE00DAD004A8F78 /* UIButtonShadowBorder.swift in Sources */,
 				4C77E6D41EE55480000ADDFA /* UILabelBorder.swift in Sources */,
+				4C77E6E11EE55A18000ADDFA /* UIImageExtended.swift in Sources */,
 				4C77E6DA1EE555E3000ADDFA /* UILabelClassExtension.swift in Sources */,
 				4C77E6D61EE55502000ADDFA /* UILabelCornerRadius.swift in Sources */,
 				4C4E44711EE00DAD004A8F78 /* UIButtonSublayer.swift in Sources */,
+				4C77E6E81EE5661C000ADDFA /* UIImageViewRadius.swift in Sources */,
 				4C8794F71EDD52BA007EB30E /* CommonCodeSwift.xcdatamodeld in Sources */,
+				4C77E6E61EE564C6000ADDFA /* UIImageViewBorder.swift in Sources */,
 				4C4E446F1EE00DAD004A8F78 /* UIButtonClassExtension.swift in Sources */,
 				4C4E44731EE00DF8004A8F78 /* UIButtonExtension.swift in Sources */,
 				4C4E446E1EE00DAD004A8F78 /* UIButtonBorder.swift in Sources */,
 				4C4E446D1EE00DAD004A8F78 /* UIBttonCornerRadius.swift in Sources */,
+				4C77E6EA1EE56832000ADDFA /* UIImageViewExtension.swift in Sources */,
 				4C8794F11EDD52BA007EB30E /* ViewController.swift in Sources */,
+				4C77E6EC1EE569C6000ADDFA /* UIImageViewExtended.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
