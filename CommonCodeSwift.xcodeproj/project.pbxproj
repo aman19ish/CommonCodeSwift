@@ -13,6 +13,9 @@
 		4C4E44701EE00DAD004A8F78 /* UIButtonShadowBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E446A1EE00DAD004A8F78 /* UIButtonShadowBorder.swift */; };
 		4C4E44711EE00DAD004A8F78 /* UIButtonSublayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E446B1EE00DAD004A8F78 /* UIButtonSublayer.swift */; };
 		4C4E44731EE00DF8004A8F78 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E44721EE00DF8004A8F78 /* UIButtonExtension.swift */; };
+		4C77E6D41EE55480000ADDFA /* UILabelBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6D31EE55480000ADDFA /* UILabelBorder.swift */; };
+		4C77E6D61EE55502000ADDFA /* UILabelCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6D51EE55502000ADDFA /* UILabelCornerRadius.swift */; };
+		4C77E6DA1EE555E3000ADDFA /* UILabelClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6D91EE555E3000ADDFA /* UILabelClassExtension.swift */; };
 		4C8794F11EDD52BA007EB30E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8794F01EDD52BA007EB30E /* ViewController.swift */; };
 		4C8794F41EDD52BA007EB30E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8794F21EDD52BA007EB30E /* Main.storyboard */; };
 		4C8794F71EDD52BA007EB30E /* CommonCodeSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C8794F51EDD52BA007EB30E /* CommonCodeSwift.xcdatamodeld */; };
@@ -47,6 +50,9 @@
 		4C4E446A1EE00DAD004A8F78 /* UIButtonShadowBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonShadowBorder.swift; sourceTree = "<group>"; };
 		4C4E446B1EE00DAD004A8F78 /* UIButtonSublayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonSublayer.swift; sourceTree = "<group>"; };
 		4C4E44721EE00DF8004A8F78 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		4C77E6D31EE55480000ADDFA /* UILabelBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelBorder.swift; sourceTree = "<group>"; };
+		4C77E6D51EE55502000ADDFA /* UILabelCornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelCornerRadius.swift; sourceTree = "<group>"; };
+		4C77E6D91EE555E3000ADDFA /* UILabelClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelClassExtension.swift; sourceTree = "<group>"; };
 		4C8794EB1EDD52BA007EB30E /* CommonCodeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonCodeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8794F01EDD52BA007EB30E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C8794F31EDD52BA007EB30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +123,16 @@
 			path = UIButtonExtension;
 			sourceTree = "<group>";
 		};
+		4C77E6D21EE5542B000ADDFA /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				4C77E6D31EE55480000ADDFA /* UILabelBorder.swift */,
+				4C77E6D51EE55502000ADDFA /* UILabelCornerRadius.swift */,
+				4C77E6D91EE555E3000ADDFA /* UILabelClassExtension.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 		4C8794E21EDD52BA007EB30E = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +189,7 @@
 		4C87955C1EDD95ED007EB30E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4C77E6D21EE5542B000ADDFA /* UILabel */,
 				4C4E44651EE00DAD004A8F78 /* UIButton */,
 			);
 			path = Extensions;
@@ -322,6 +339,9 @@
 			files = (
 				4C87955F1EDD95FB007EB30E /* AppDelegate.swift in Sources */,
 				4C4E44701EE00DAD004A8F78 /* UIButtonShadowBorder.swift in Sources */,
+				4C77E6D41EE55480000ADDFA /* UILabelBorder.swift in Sources */,
+				4C77E6DA1EE555E3000ADDFA /* UILabelClassExtension.swift in Sources */,
+				4C77E6D61EE55502000ADDFA /* UILabelCornerRadius.swift in Sources */,
 				4C4E44711EE00DAD004A8F78 /* UIButtonSublayer.swift in Sources */,
 				4C8794F71EDD52BA007EB30E /* CommonCodeSwift.xcdatamodeld in Sources */,
 				4C4E446F1EE00DAD004A8F78 /* UIButtonClassExtension.swift in Sources */,
