@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1407C8341EE2EFEB00EBF906 /* UICellectionViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407C8331EE2EFEB00EBF906 /* UICellectionViewCellExtension.swift */; };
+		1407C8361EE2F03300EBF906 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407C8351EE2F03300EBF906 /* UITableViewCellExtension.swift */; };
 		4C4E446D1EE00DAD004A8F78 /* UIBttonCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E44671EE00DAD004A8F78 /* UIBttonCornerRadius.swift */; };
 		4C4E446E1EE00DAD004A8F78 /* UIButtonBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E44681EE00DAD004A8F78 /* UIButtonBorder.swift */; };
 		4C4E446F1EE00DAD004A8F78 /* UIButtonClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E44691EE00DAD004A8F78 /* UIButtonClassExtension.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1407C8331EE2EFEB00EBF906 /* UICellectionViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICellectionViewCellExtension.swift; sourceTree = "<group>"; };
+		1407C8351EE2F03300EBF906 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		4C4E44671EE00DAD004A8F78 /* UIBttonCornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBttonCornerRadius.swift; sourceTree = "<group>"; };
 		4C4E44681EE00DAD004A8F78 /* UIButtonBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonBorder.swift; sourceTree = "<group>"; };
 		4C4E44691EE00DAD004A8F78 /* UIButtonClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonClassExtension.swift; sourceTree = "<group>"; };
@@ -88,6 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1407C82D1EE2EEAE00EBF906 /* UICollectionViewCellExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1407C8331EE2EFEB00EBF906 /* UICellectionViewCellExtension.swift */,
+			);
+			path = UICollectionViewCellExtension;
+			sourceTree = "<group>";
+		};
+		1407C82E1EE2EEAE00EBF906 /* UITableViewCellExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1407C8351EE2F03300EBF906 /* UITableViewCellExtension.swift */,
+			);
+			path = UITableViewCellExtension;
+			sourceTree = "<group>";
+		};
 		4C4E44651EE00DAD004A8F78 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +193,8 @@
 		4C87955C1EDD95ED007EB30E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1407C82D1EE2EEAE00EBF906 /* UICollectionViewCellExtension */,
+				1407C82E1EE2EEAE00EBF906 /* UITableViewCellExtension */,
 				4C4E44651EE00DAD004A8F78 /* UIButton */,
 			);
 			path = Extensions;
@@ -329,6 +351,8 @@
 				4C4E446E1EE00DAD004A8F78 /* UIButtonBorder.swift in Sources */,
 				4C4E446D1EE00DAD004A8F78 /* UIBttonCornerRadius.swift in Sources */,
 				4C8794F11EDD52BA007EB30E /* ViewController.swift in Sources */,
+				1407C8341EE2EFEB00EBF906 /* UICellectionViewCellExtension.swift in Sources */,
+				1407C8361EE2F03300EBF906 /* UITableViewCellExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
