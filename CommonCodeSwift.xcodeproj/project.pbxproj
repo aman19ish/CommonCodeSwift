@@ -29,7 +29,7 @@
 		4C8795071EDD52BA007EB30E /* CommonCodeSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8795061EDD52BA007EB30E /* CommonCodeSwiftTests.swift */; };
 		4C8795121EDD52BA007EB30E /* CommonCodeSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8795111EDD52BA007EB30E /* CommonCodeSwiftUITests.swift */; };
 		4C87955F1EDD95FB007EB30E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C87955E1EDD95FB007EB30E /* AppDelegate.swift */; };
-		4CCC5D441EEFA6A600012218 /* UITextFieldBoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D431EEFA6A600012218 /* UITextFieldBoder.swift */; };
+		4CCC5D441EEFA6A600012218 /* UITextFieldBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D431EEFA6A600012218 /* UITextFieldBorder.swift */; };
 		4CCC5D461EEFA6BA00012218 /* UITextFieldClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */; };
 		4CCC5D4A1EEFA78400012218 /* UITextFieldPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D491EEFA78400012218 /* UITextFieldPadding.swift */; };
 		4CCC5D4E1EEFD1EE00012218 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D4D1EEFD1EE00012218 /* UITableViewCellExtension.swift */; };
@@ -84,7 +84,7 @@
 		4C8795111EDD52BA007EB30E /* CommonCodeSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCodeSwiftUITests.swift; sourceTree = "<group>"; };
 		4C8795131EDD52BA007EB30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C87955E1EDD95FB007EB30E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CCC5D431EEFA6A600012218 /* UITextFieldBoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldBoder.swift; sourceTree = "<group>"; };
+		4CCC5D431EEFA6A600012218 /* UITextFieldBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldBorder.swift; sourceTree = "<group>"; };
 		4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldClassExtension.swift; sourceTree = "<group>"; };
 		4CCC5D491EEFA78400012218 /* UITextFieldPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldPadding.swift; sourceTree = "<group>"; };
 		4CCC5D4D1EEFD1EE00012218 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
@@ -297,7 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */,
-				4CCC5D431EEFA6A600012218 /* UITextFieldBoder.swift */,
+				4CCC5D431EEFA6A600012218 /* UITextFieldBorder.swift */,
 				4CCC5D491EEFA78400012218 /* UITextFieldPadding.swift */,
 			);
 			path = UITextFieldClassExtension;
@@ -491,7 +491,7 @@
 				4C77E6D41EE55480000ADDFA /* UILabelBorder.swift in Sources */,
 				4C77E6E11EE55A18000ADDFA /* UIImageExtended.swift in Sources */,
 				4CCC5D551EEFE02A00012218 /* UITextViewClassExtension.swift in Sources */,
-				4CCC5D441EEFA6A600012218 /* UITextFieldBoder.swift in Sources */,
+				4CCC5D441EEFA6A600012218 /* UITextFieldBorder.swift in Sources */,
 				4C77E6DA1EE555E3000ADDFA /* UILabelClassExtension.swift in Sources */,
 				4CCC5D461EEFA6BA00012218 /* UITextFieldClassExtension.swift in Sources */,
 				4CCC5D501EEFD22400012218 /* UICollecionViewCellExtension.swift in Sources */,

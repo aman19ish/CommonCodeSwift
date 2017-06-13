@@ -1,5 +1,5 @@
 //
-//  UITextFieldBoder.swift
+//  UITextFieldBorder.swift
 //  CommonCodeSwift
 //
 //  Created by Aman Gupta on 13/06/17.
@@ -9,9 +9,9 @@
 import UIKit
 @IBDesignable
 
-class UITextFieldBoder: UITextFieldPadding {
+class UITextFieldBorder: UITextFieldPadding {
 
-    //MARK:- TextField Boder width and color
+    //MARK:- TextField Border width and color
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth

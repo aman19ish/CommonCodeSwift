@@ -11,14 +11,13 @@ import UIKit
 
 class UIImageViewBorder: UIImageView {
     
-    //MARK:- Boder width
+    //MARK:- UIImageBorder
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
         }
     }
     
-    //MARK:- Border color
     @IBInspectable var borderColor: UIColor? {
         didSet {
             layer.borderColor = borderColor?.cgColor

@@ -9,7 +9,7 @@
 import UIKit
 @IBDesignable
 
-class UITextFieldClassExtension: UITextFieldBoder {
+class UITextFieldClassExtension: UITextFieldBorder {
 
     /*
     // Only override draw() if you perform custom drawing.

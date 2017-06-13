@@ -11,14 +11,13 @@ import UIKit
 
 class UILabelBorder: UILabel {
 
-    //MARK:- Boder width
+    //MARK:- UILabel Border
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
         }
     }
     
-    //MARK:- Boder color
     @IBInspectable var borderColor: UIColor? {
         didSet {
             layer.borderColor = borderColor?.cgColor
