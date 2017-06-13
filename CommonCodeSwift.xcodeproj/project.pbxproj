@@ -32,6 +32,8 @@
 		4CCC5D441EEFA6A600012218 /* UITextFieldBoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D431EEFA6A600012218 /* UITextFieldBoder.swift */; };
 		4CCC5D461EEFA6BA00012218 /* UITextFieldClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */; };
 		4CCC5D4A1EEFA78400012218 /* UITextFieldPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D491EEFA78400012218 /* UITextFieldPadding.swift */; };
+		4CCC5D4E1EEFD1EE00012218 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D4D1EEFD1EE00012218 /* UITableViewCellExtension.swift */; };
+		4CCC5D501EEFD22400012218 /* UICollecionViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D4F1EEFD22400012218 /* UICollecionViewCellExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		4CCC5D431EEFA6A600012218 /* UITextFieldBoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldBoder.swift; sourceTree = "<group>"; };
 		4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldClassExtension.swift; sourceTree = "<group>"; };
 		4CCC5D491EEFA78400012218 /* UITextFieldPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldPadding.swift; sourceTree = "<group>"; };
+		4CCC5D4D1EEFD1EE00012218 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		4CCC5D4F1EEFD22400012218 /* UICollecionViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollecionViewCellExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +260,8 @@
 		4C87955C1EDD95ED007EB30E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4CCC5D4B1EEFD1C400012218 /* UICollectionVIewCellExtension */,
+				4CCC5D4C1EEFD1C400012218 /* UITableViewCelllExtension */,
 				4CCC5D3E1EEFA66B00012218 /* UITextField */,
 				4C77E6E21EE564AB000ADDFA /* UIImageView */,
 				4C77E6D21EE5542B000ADDFA /* UILabel */,
@@ -297,6 +303,22 @@
 			children = (
 			);
 			path = UITextFieldExtended;
+			sourceTree = "<group>";
+		};
+		4CCC5D4B1EEFD1C400012218 /* UICollectionVIewCellExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4CCC5D4F1EEFD22400012218 /* UICollecionViewCellExtension.swift */,
+			);
+			path = UICollectionVIewCellExtension;
+			sourceTree = "<group>";
+		};
+		4CCC5D4C1EEFD1C400012218 /* UITableViewCelllExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4CCC5D4D1EEFD1EE00012218 /* UITableViewCellExtension.swift */,
+			);
+			path = UITableViewCelllExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,6 +463,7 @@
 				4CCC5D441EEFA6A600012218 /* UITextFieldBoder.swift in Sources */,
 				4C77E6DA1EE555E3000ADDFA /* UILabelClassExtension.swift in Sources */,
 				4CCC5D461EEFA6BA00012218 /* UITextFieldClassExtension.swift in Sources */,
+				4CCC5D501EEFD22400012218 /* UICollecionViewCellExtension.swift in Sources */,
 				4C77E6D61EE55502000ADDFA /* UILabelCornerRadius.swift in Sources */,
 				4C4E44711EE00DAD004A8F78 /* UIButtonSublayer.swift in Sources */,
 				4CCC5D4A1EEFA78400012218 /* UITextFieldPadding.swift in Sources */,
@@ -452,6 +475,7 @@
 				4C4E446E1EE00DAD004A8F78 /* UIButtonBorder.swift in Sources */,
 				4C4E446D1EE00DAD004A8F78 /* UIBttonCornerRadius.swift in Sources */,
 				4C77E6EA1EE56832000ADDFA /* UIImageViewExtension.swift in Sources */,
+				4CCC5D4E1EEFD1EE00012218 /* UITableViewCellExtension.swift in Sources */,
 				4C8794F11EDD52BA007EB30E /* ViewController.swift in Sources */,
 				4C77E6EC1EE569C6000ADDFA /* UIImageViewExtended.swift in Sources */,
 			);
