@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -124,12 +125,36 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J6o-7E-hgz" customClass="UIViewClassExtension" customModule="CommonCodeSwift" customModuleProvider="target">
+                                <rect key="frame" x="36" y="464" width="75" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="J6o-7E-hgz" secondAttribute="height" multiplier="1:1" id="8NM-CE-kC3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.87450980389999999" green="0.20392156859999999" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="makeCircle" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="asPerWidthMakeCircle">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="AZx-p2-jpI" secondAttribute="trailing" constant="20" id="0v6-wt-0JX"/>
+                            <constraint firstItem="J6o-7E-hgz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="4gr-Zr-XPG"/>
                             <constraint firstItem="Zpo-Vz-8n4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="727-wv-lap"/>
                             <constraint firstItem="SXj-Fm-WGO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ddg-RC-l3l"/>
+                            <constraint firstItem="J6o-7E-hgz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="JAB-aH-x1e"/>
                             <constraint firstItem="SXj-Fm-WGO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="JuU-WK-2na"/>
                             <constraint firstItem="1ce-Hk-u9t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="L2v-tb-kXR"/>
                             <constraint firstItem="AZx-p2-jpI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="PfM-JA-5UV"/>
@@ -141,12 +166,13 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1ce-Hk-u9t" secondAttribute="bottom" constant="20" id="n8I-9T-HdT"/>
                             <constraint firstItem="1ce-Hk-u9t" firstAttribute="top" secondItem="AZx-p2-jpI" secondAttribute="bottom" constant="20" id="pO6-yh-LfP"/>
                             <constraint firstAttribute="trailing" secondItem="1ce-Hk-u9t" secondAttribute="trailing" constant="20" id="qmE-Nu-qTE"/>
+                            <constraint firstItem="AZx-p2-jpI" firstAttribute="top" secondItem="J6o-7E-hgz" secondAttribute="bottom" constant="8" id="reT-Kc-ODt"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="42"/>
+            <point key="canvasLocation" x="24.800000000000001" y="41.829085457271368"/>
         </scene>
     </scenes>
 </document>
