@@ -29,6 +29,9 @@
 		4C8795071EDD52BA007EB30E /* CommonCodeSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8795061EDD52BA007EB30E /* CommonCodeSwiftTests.swift */; };
 		4C8795121EDD52BA007EB30E /* CommonCodeSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8795111EDD52BA007EB30E /* CommonCodeSwiftUITests.swift */; };
 		4C87955F1EDD95FB007EB30E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C87955E1EDD95FB007EB30E /* AppDelegate.swift */; };
+		4CCC5D441EEFA6A600012218 /* UITextFieldBoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D431EEFA6A600012218 /* UITextFieldBoder.swift */; };
+		4CCC5D461EEFA6BA00012218 /* UITextFieldClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */; };
+		4CCC5D4A1EEFA78400012218 /* UITextFieldPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D491EEFA78400012218 /* UITextFieldPadding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		4C8795111EDD52BA007EB30E /* CommonCodeSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCodeSwiftUITests.swift; sourceTree = "<group>"; };
 		4C8795131EDD52BA007EB30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C87955E1EDD95FB007EB30E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4CCC5D431EEFA6A600012218 /* UITextFieldBoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldBoder.swift; sourceTree = "<group>"; };
+		4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldClassExtension.swift; sourceTree = "<group>"; };
+		4CCC5D491EEFA78400012218 /* UITextFieldPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldPadding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +256,7 @@
 		4C87955C1EDD95ED007EB30E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4CCC5D3E1EEFA66B00012218 /* UITextField */,
 				4C77E6E21EE564AB000ADDFA /* UIImageView */,
 				4C77E6D21EE5542B000ADDFA /* UILabel */,
 				4C77E6DB1EE55990000ADDFA /* UIImage */,
@@ -264,6 +271,32 @@
 				4C87955E1EDD95FB007EB30E /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4CCC5D3E1EEFA66B00012218 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				4CCC5D3F1EEFA66B00012218 /* UITextFieldClassExtension */,
+				4CCC5D401EEFA66B00012218 /* UITextFieldExtended */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		4CCC5D3F1EEFA66B00012218 /* UITextFieldClassExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */,
+				4CCC5D431EEFA6A600012218 /* UITextFieldBoder.swift */,
+				4CCC5D491EEFA78400012218 /* UITextFieldPadding.swift */,
+			);
+			path = UITextFieldClassExtension;
+			sourceTree = "<group>";
+		};
+		4CCC5D401EEFA66B00012218 /* UITextFieldExtended */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITextFieldExtended;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +367,7 @@
 				TargetAttributes = {
 					4C8794EA1EDD52BA007EB30E = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8XDB8SC3ZS;
 						ProvisioningStyle = Automatic;
 					};
 					4C8795011EDD52BA007EB30E = {
@@ -404,9 +438,12 @@
 				4C4E44701EE00DAD004A8F78 /* UIButtonShadowBorder.swift in Sources */,
 				4C77E6D41EE55480000ADDFA /* UILabelBorder.swift in Sources */,
 				4C77E6E11EE55A18000ADDFA /* UIImageExtended.swift in Sources */,
+				4CCC5D441EEFA6A600012218 /* UITextFieldBoder.swift in Sources */,
 				4C77E6DA1EE555E3000ADDFA /* UILabelClassExtension.swift in Sources */,
+				4CCC5D461EEFA6BA00012218 /* UITextFieldClassExtension.swift in Sources */,
 				4C77E6D61EE55502000ADDFA /* UILabelCornerRadius.swift in Sources */,
 				4C4E44711EE00DAD004A8F78 /* UIButtonSublayer.swift in Sources */,
+				4CCC5D4A1EEFA78400012218 /* UITextFieldPadding.swift in Sources */,
 				4C77E6E81EE5661C000ADDFA /* UIImageViewRadius.swift in Sources */,
 				4C8794F71EDD52BA007EB30E /* CommonCodeSwift.xcdatamodeld in Sources */,
 				4C77E6E61EE564C6000ADDFA /* UIImageViewBorder.swift in Sources */,
@@ -568,7 +605,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8XDB8SC3ZS;
 				INFOPLIST_FILE = CommonCodeSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aman.CommonCodeSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -580,7 +619,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8XDB8SC3ZS;
 				INFOPLIST_FILE = CommonCodeSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aman.CommonCodeSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";

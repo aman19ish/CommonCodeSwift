@@ -91,17 +91,35 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ce-Hk-u9t" customClass="UITextFieldClassExtension" customModule="CommonCodeSwift" customModuleProvider="target">
+                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <color key="tintColor" red="0.87450980389999999" green="0.20392156859999999" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPaddingWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Zpo-Vz-8n4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="727-wv-lap"/>
                             <constraint firstItem="SXj-Fm-WGO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ddg-RC-l3l"/>
                             <constraint firstItem="SXj-Fm-WGO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="JuU-WK-2na"/>
+                            <constraint firstItem="1ce-Hk-u9t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="L2v-tb-kXR"/>
                             <constraint firstItem="vBs-m0-ChR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="UBm-eR-Prh"/>
                             <constraint firstItem="SXj-Fm-WGO" firstAttribute="top" secondItem="vBs-m0-ChR" secondAttribute="bottom" constant="20" id="W8d-fn-A5h"/>
                             <constraint firstItem="vBs-m0-ChR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Zec-Nd-Qcd"/>
                             <constraint firstItem="Zpo-Vz-8n4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cNf-Wc-fxU"/>
                             <constraint firstAttribute="trailing" secondItem="vBs-m0-ChR" secondAttribute="trailing" constant="20" id="j9h-LV-OY5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1ce-Hk-u9t" secondAttribute="bottom" constant="20" id="n8I-9T-HdT"/>
+                            <constraint firstAttribute="trailing" secondItem="1ce-Hk-u9t" secondAttribute="trailing" constant="20" id="qmE-Nu-qTE"/>
                         </constraints>
                     </view>
                 </viewController>
