@@ -17,7 +17,7 @@ extension UIImage {
         guard let cgImage = self.cgImage else {
             return nil
         }
-
+        
         if self.imageOrientation == UIImageOrientation.up {
             return self
         }
@@ -97,7 +97,7 @@ extension UIImage {
         return img;
     }
     
-    //MARK:- Graphoc image color
+    //MARK:- Graphic image color
     class func imageWithColor(color: UIColor,height: CGFloat) -> UIImage {
         
         let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: height)
@@ -108,4 +108,87 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return image
     }
+    
+    /* Image compression by decreasing image rect size , iamge per pixel density is same.
+     */
+    
+    //MARK:- Image compression
+    func compressImageBYRect(image:UIImage, targetSize: CGSize) -> UIImage {
+        // Reducing file size to a 10th
+        
+        var actualHeight : CGFloat = image.size.height
+        var actualWidth : CGFloat = image.size.width
+        let maxHeight : CGFloat = targetSize.width
+        let maxWidth : CGFloat = targetSize.height
+        var imgRatio : CGFloat = actualWidth/actualHeight
+        let maxRatio : CGFloat = maxWidth/maxHeight
+        if (actualHeight > maxHeight || actualWidth > maxWidth){
+            if(imgRatio < maxRatio){
+                //adjust width according to maxHeight
+                imgRatio = maxHeight / actualHeight
+                actualWidth = imgRatio * actualWidth
+                actualHeight = maxHeight
+            }
+            else if(imgRatio > maxRatio){
+                //adjust height according to maxWidth
+                imgRatio = maxWidth / actualWidth
+                actualHeight = imgRatio * actualHeight
+                actualWidth = maxWidth
+            }
+            else{
+                actualHeight = maxHeight
+                actualWidth = maxWidth
+            }
+        }
+        let rect = CGRect.init(x: 0.0, y: 0.0, width: actualWidth, height: actualHeight)
+        UIGraphicsBeginImageContext(rect.size)
+        image.draw(in: rect)
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return img!
+    }
+    
+    /* Image compression by decreasing image rect and quality both
+     */
+    
+    func compressImage(image:UIImage, targetSize: CGSize,compressionQuality: CGFloat) -> UIImage {
+        // Reducing file size to a 10th
+        var actualHeight : CGFloat = image.size.height
+        var actualWidth : CGFloat = image.size.width
+        let maxHeight : CGFloat = targetSize.width
+        let maxWidth : CGFloat = targetSize.height
+        var imgRatio : CGFloat = actualWidth/actualHeight
+        let maxRatio : CGFloat = maxWidth/maxHeight
+        var compressionQuality : CGFloat = compressionQuality
+        if (actualHeight > maxHeight || actualWidth > maxWidth){
+            if(imgRatio < maxRatio){
+                //adjust width according to maxHeight
+                imgRatio = maxHeight / actualHeight
+                actualWidth = imgRatio * actualWidth
+                actualHeight = maxHeight
+            }
+            else if(imgRatio > maxRatio){
+                //adjust height according to maxWidth
+                imgRatio = maxWidth / actualWidth
+                actualHeight = imgRatio * actualHeight
+                actualWidth = maxWidth
+            }
+            else{
+                actualHeight = maxHeight
+                actualWidth = maxWidth
+                compressionQuality = 1
+            }
+        }
+        let rect = CGRect.init(x: 0.0, y: 0.0, width: actualWidth, height: actualHeight)
+        UIGraphicsBeginImageContext(rect.size)
+        image.draw(in: rect)
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        let imageData = UIImageJPEGRepresentation(img!, compressionQuality)
+        UIGraphicsEndImageContext()
+        if let data = imageData {
+            return UIImage(data: data)!
+        }
+        return image
+    }
+    
 }

@@ -38,6 +38,7 @@
 		4CCC5D571EEFE05700012218 /* UItextViewBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D561EEFE05700012218 /* UItextViewBorder.swift */; };
 		4CCC5D5F1EEFF75700012218 /* UIViewClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D5E1EEFF75700012218 /* UIViewClassExtension.swift */; };
 		4CCC5D611EEFF76D00012218 /* UIViewBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D601EEFF76D00012218 /* UIViewBorder.swift */; };
+		4CCC5D671EEFFDD000012218 /* UINavCClassExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D661EEFFDD000012218 /* UINavCClassExtended.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		4CCC5D561EEFE05700012218 /* UItextViewBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UItextViewBorder.swift; sourceTree = "<group>"; };
 		4CCC5D5E1EEFF75700012218 /* UIViewClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewClassExtension.swift; sourceTree = "<group>"; };
 		4CCC5D601EEFF76D00012218 /* UIViewBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewBorder.swift; sourceTree = "<group>"; };
+		4CCC5D661EEFFDD000012218 /* UINavCClassExtended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavCClassExtended.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 		4C8794ED1EDD52BA007EB30E /* CommonCodeSwift */ = {
 			isa = PBXGroup;
 			children = (
+				4CCC5D631EEFFD7000012218 /* CustomNavC */,
 				4C87955D1EDD95FB007EB30E /* AppDelegate */,
 				4C87955C1EDD95ED007EB30E /* Extensions */,
 				4C8794F01EDD52BA007EB30E /* ViewController.swift */,
@@ -379,6 +382,14 @@
 			children = (
 			);
 			path = UIViewExtended;
+			sourceTree = "<group>";
+		};
+		4CCC5D631EEFFD7000012218 /* CustomNavC */ = {
+			isa = PBXGroup;
+			children = (
+				4CCC5D661EEFFDD000012218 /* UINavCClassExtended.swift */,
+			);
+			path = CustomNavC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -528,6 +539,7 @@
 				4CCC5D501EEFD22400012218 /* UICollecionViewCellExtension.swift in Sources */,
 				4C77E6D61EE55502000ADDFA /* UILabelCornerRadius.swift in Sources */,
 				4C4E44711EE00DAD004A8F78 /* UIButtonSublayer.swift in Sources */,
+				4CCC5D671EEFFDD000012218 /* UINavCClassExtended.swift in Sources */,
 				4CCC5D4A1EEFA78400012218 /* UITextFieldPadding.swift in Sources */,
 				4C77E6E81EE5661C000ADDFA /* UIImageViewRadius.swift in Sources */,
 				4CCC5D571EEFE05700012218 /* UItextViewBorder.swift in Sources */,

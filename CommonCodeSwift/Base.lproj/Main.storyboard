@@ -169,6 +169,9 @@
                             <constraint firstItem="AZx-p2-jpI" firstAttribute="top" secondItem="J6o-7E-hgz" secondAttribute="bottom" constant="8" id="reT-Kc-ODt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textImageView" destination="SXj-Fm-WGO" id="lBq-PQ-gnr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
