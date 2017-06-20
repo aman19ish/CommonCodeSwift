@@ -13,6 +13,7 @@
 		4C4E44701EE00DAD004A8F78 /* UIButtonShadowBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E446A1EE00DAD004A8F78 /* UIButtonShadowBorder.swift */; };
 		4C4E44711EE00DAD004A8F78 /* UIButtonSublayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E446B1EE00DAD004A8F78 /* UIButtonSublayer.swift */; };
 		4C4E44731EE00DF8004A8F78 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E44721EE00DF8004A8F78 /* UIButtonExtension.swift */; };
+		4C6209D31EF8E893008DB067 /* GlobalEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6209D21EF8E893008DB067 /* GlobalEnums.swift */; };
 		4C77E6D41EE55480000ADDFA /* UILabelBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6D31EE55480000ADDFA /* UILabelBorder.swift */; };
 		4C77E6D61EE55502000ADDFA /* UILabelCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6D51EE55502000ADDFA /* UILabelCornerRadius.swift */; };
 		4C77E6DA1EE555E3000ADDFA /* UILabelClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6D91EE555E3000ADDFA /* UILabelClassExtension.swift */; };
@@ -65,6 +66,7 @@
 		4C4E446A1EE00DAD004A8F78 /* UIButtonShadowBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonShadowBorder.swift; sourceTree = "<group>"; };
 		4C4E446B1EE00DAD004A8F78 /* UIButtonSublayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonSublayer.swift; sourceTree = "<group>"; };
 		4C4E44721EE00DF8004A8F78 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		4C6209D21EF8E893008DB067 /* GlobalEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalEnums.swift; sourceTree = "<group>"; };
 		4C77E6D31EE55480000ADDFA /* UILabelBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelBorder.swift; sourceTree = "<group>"; };
 		4C77E6D51EE55502000ADDFA /* UILabelCornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelCornerRadius.swift; sourceTree = "<group>"; };
 		4C77E6D91EE555E3000ADDFA /* UILabelClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelClassExtension.swift; sourceTree = "<group>"; };
@@ -153,6 +155,15 @@
 			path = UIButtonExtension;
 			sourceTree = "<group>";
 		};
+		4C6209D11EF8E870008DB067 /* GlobalEnum */ = {
+			isa = PBXGroup;
+			children = (
+				4C6209D21EF8E893008DB067 /* GlobalEnums.swift */,
+			);
+			name = GlobalEnum;
+			path = AppDelegate/GlobalEnum;
+			sourceTree = "<group>";
+		};
 		4C77E6D21EE5542B000ADDFA /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +250,7 @@
 			children = (
 				4CCC5D631EEFFD7000012218 /* CustomNavC */,
 				4C87955D1EDD95FB007EB30E /* AppDelegate */,
+				4C6209D11EF8E870008DB067 /* GlobalEnum */,
 				4C87955C1EDD95ED007EB30E /* Extensions */,
 				4C8794F01EDD52BA007EB30E /* ViewController.swift */,
 				4C8794F21EDD52BA007EB30E /* Main.storyboard */,
@@ -532,6 +544,7 @@
 				4C77E6D41EE55480000ADDFA /* UILabelBorder.swift in Sources */,
 				4C77E6E11EE55A18000ADDFA /* UIImageExtended.swift in Sources */,
 				4CCC5D551EEFE02A00012218 /* UITextViewClassExtension.swift in Sources */,
+				4C6209D31EF8E893008DB067 /* GlobalEnums.swift in Sources */,
 				4CCC5D5F1EEFF75700012218 /* UIViewClassExtension.swift in Sources */,
 				4CCC5D441EEFA6A600012218 /* UITextFieldBorder.swift in Sources */,
 				4C77E6DA1EE555E3000ADDFA /* UILabelClassExtension.swift in Sources */,
