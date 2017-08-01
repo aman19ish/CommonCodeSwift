@@ -30,6 +30,7 @@
 		4C8795071EDD52BA007EB30E /* CommonCodeSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8795061EDD52BA007EB30E /* CommonCodeSwiftTests.swift */; };
 		4C8795121EDD52BA007EB30E /* CommonCodeSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8795111EDD52BA007EB30E /* CommonCodeSwiftUITests.swift */; };
 		4C87955F1EDD95FB007EB30E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C87955E1EDD95FB007EB30E /* AppDelegate.swift */; };
+		4C89F2B91F30614D007B0D43 /* AGDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89F2B81F30614D007B0D43 /* AGDatePicker.swift */; };
 		4CCC5D441EEFA6A600012218 /* UITextFieldBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D431EEFA6A600012218 /* UITextFieldBorder.swift */; };
 		4CCC5D461EEFA6BA00012218 /* UITextFieldClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */; };
 		4CCC5D4A1EEFA78400012218 /* UITextFieldPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D491EEFA78400012218 /* UITextFieldPadding.swift */; };
@@ -88,6 +89,7 @@
 		4C8795111EDD52BA007EB30E /* CommonCodeSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCodeSwiftUITests.swift; sourceTree = "<group>"; };
 		4C8795131EDD52BA007EB30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C87955E1EDD95FB007EB30E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C89F2B81F30614D007B0D43 /* AGDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGDatePicker.swift; sourceTree = "<group>"; };
 		4CCC5D431EEFA6A600012218 /* UITextFieldBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldBorder.swift; sourceTree = "<group>"; };
 		4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldClassExtension.swift; sourceTree = "<group>"; };
 		4CCC5D491EEFA78400012218 /* UITextFieldPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldPadding.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 		4C87955C1EDD95ED007EB30E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4C89F2B71F306124007B0D43 /* AGDatePicker */,
 				4CCC5D5B1EEFF73F00012218 /* UIView */,
 				4CCC5D511EEFDFEE00012218 /* UITextView */,
 				4CCC5D4B1EEFD1C400012218 /* UICollectionVIewCellExtension */,
@@ -299,6 +302,14 @@
 				4C87955E1EDD95FB007EB30E /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4C89F2B71F306124007B0D43 /* AGDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				4C89F2B81F30614D007B0D43 /* AGDatePicker.swift */,
+			);
+			path = AGDatePicker;
 			sourceTree = "<group>";
 		};
 		4CCC5D3E1EEFA66B00012218 /* UITextField */ = {
@@ -549,6 +560,7 @@
 				4C77E6E61EE564C6000ADDFA /* UIImageViewBorder.swift in Sources */,
 				4C4E446F1EE00DAD004A8F78 /* UIButtonClassExtension.swift in Sources */,
 				4C4E44731EE00DF8004A8F78 /* UIButtonExtension.swift in Sources */,
+				4C89F2B91F30614D007B0D43 /* AGDatePicker.swift in Sources */,
 				4C4E446E1EE00DAD004A8F78 /* UIButtonBorder.swift in Sources */,
 				4C4E446D1EE00DAD004A8F78 /* UIBttonCornerRadius.swift in Sources */,
 				4C77E6EA1EE56832000ADDFA /* UIImageViewExtension.swift in Sources */,

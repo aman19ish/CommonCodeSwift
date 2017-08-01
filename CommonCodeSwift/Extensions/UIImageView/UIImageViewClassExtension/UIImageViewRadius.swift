@@ -29,8 +29,7 @@ class UIImageViewRadius: UIImageViewBorder {
     
     //MARK:- Make cirle image
     @IBInspectable var makeCircle: Bool = false {
-        didSet
-        {
+        didSet {
             layer.masksToBounds = cornerRadius > 0
         }
     }

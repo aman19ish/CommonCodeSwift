@@ -13,44 +13,37 @@ class UIButtonSublayer: UIBttonCornerRadius {
     
     //MARK:- Sublayer variables
     @IBInspectable var sublayerBorderWidth: CGFloat = 1 {
-        didSet
-        {
+        didSet {
         }
     }
     
     @IBInspectable var sublayerBorderColorSelected: UIColor? {
-        didSet
-        {
+        didSet {
         }
     }
     
     @IBInspectable var sublayerBorderColorNormal: UIColor? {
-        didSet
-        {
+        didSet {
         }
     }
     
     @IBInspectable var leftSublayer: Bool = false {
-        didSet
-        {
+        didSet {
         }
     }
     
     @IBInspectable var rightSublayer: Bool = false {
-        didSet
-        {
+        didSet {
         }
     }
     
     @IBInspectable var bottomSublayer: Bool = false {
-        didSet
-        {
+        didSet {
         }
     }
     
     @IBInspectable var topSublayer: Bool = false {
-        didSet
-        {
+        didSet {
         }
     }
     
@@ -58,56 +51,47 @@ class UIButtonSublayer: UIBttonCornerRadius {
     override func layoutSubviews()
     {
         super.layoutSubviews()
-        if leftSublayer
-        {
+        if leftSublayer {
             setLeftBorderWithCALayer()
         }
-        if rightSublayer
-        {
+        if rightSublayer {
             setRightBorderWithCALayer()
         }
-        if bottomSublayer
-        {
+        if bottomSublayer {
             setBottomBorderWithCALayer()
         }
-        if topSublayer
-        {
+        if topSublayer {
             setTopBorderWithCALayer()
         }
-        if makeCircle
-        {
+        if makeCircle {
             layer.cornerRadius = self.bounds.size.width / 2
             clipsToBounds = true
         }
     }
     
     //MARK:- Set variables methods
-    fileprivate func setLeftBorderWithCALayer()
-    {
+    fileprivate func setLeftBorderWithCALayer() {
         let border = CALayer()
         border.backgroundColor = self.isSelected ? sublayerBorderColorSelected?.cgColor : sublayerBorderColorNormal?.cgColor
         border.frame = CGRect(x: 0, y: 0, width: sublayerBorderWidth, height: self.frame.size.height)
         self.layer.addSublayer(border)
     }
     
-    fileprivate func setRightBorderWithCALayer()
-    {
+    fileprivate func setRightBorderWithCALayer() {
         let border = CALayer()
         border.backgroundColor = self.isSelected ? sublayerBorderColorSelected?.cgColor : sublayerBorderColorNormal?.cgColor
         border.frame = CGRect(x: self.frame.size.width - sublayerBorderWidth, y: 0, width: sublayerBorderWidth, height: self.frame.size.height)
         self.layer.addSublayer(border)
     }
     
-    fileprivate func setTopBorderWithCALayer()
-    {
+    fileprivate func setTopBorderWithCALayer() {
         let border = CALayer()
         border.backgroundColor = self.isSelected ? sublayerBorderColorSelected?.cgColor : sublayerBorderColorNormal?.cgColor
         border.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: sublayerBorderWidth)
         self.layer.addSublayer(border)
     }
     
-    fileprivate func setBottomBorderWithCALayer()
-    {
+    fileprivate func setBottomBorderWithCALayer() {
         let border = CALayer()
         border.backgroundColor = self.isSelected ? sublayerBorderColorSelected?.cgColor : sublayerBorderColorNormal?.cgColor
         border.frame = CGRect(x: 0, y: self.frame.size.height - sublayerBorderWidth, width: self.frame.size.width, height: sublayerBorderWidth)

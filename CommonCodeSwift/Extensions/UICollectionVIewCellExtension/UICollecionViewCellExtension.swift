@@ -15,8 +15,7 @@ extension UICollectionViewCell
      */
 
     //MARK:- Get Identifier
-    static func getCellIdentifier() -> String
-    {
+    static func getCellIdentifier() -> String {
         return String(describing: self)
     }
 }

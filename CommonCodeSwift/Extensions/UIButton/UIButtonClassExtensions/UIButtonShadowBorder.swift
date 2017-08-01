@@ -20,16 +20,14 @@ class UIButtonShadowBorder: UIButton {
         }
     }
     
-    @IBInspectable var masksToBounds: Bool = false  {
-        didSet
-        {
+    @IBInspectable var masksToBounds: Bool = false {
+        didSet {
             layer.masksToBounds = masksToBounds
         }
     }
     
-    @IBInspectable var shodowColor: UIColor?  {
-        didSet
-        {
+    @IBInspectable var shodowColor: UIColor? {
+        didSet {
             layer.shadowColor = shodowColor?.cgColor
         }
     }

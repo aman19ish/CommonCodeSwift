@@ -13,8 +13,7 @@ class UITextFieldPadding: UITextField {
     
     //MARK:- Left padding
     @IBInspectable var leftPaddingWidth: CGFloat = 0.0 {
-        didSet
-        {
+        didSet {
             let viewLeft = UIView(frame: CGRect.init(x: 0, y: 0, width: leftPaddingWidth, height: self.frame.size.height))
             self.leftView = viewLeft
             self.leftViewMode = .always
@@ -26,10 +25,8 @@ class UITextFieldPadding: UITextField {
     */
     
     @IBInspectable var leftPaddingViewImage: UIImage? {
-        didSet
-        {
-            if leftPaddingViewImage != nil
-            {
+        didSet {
+            if leftPaddingViewImage != nil {
                 let viewLeft = UIView(frame: CGRect.init(x: 0, y: 0, width: 32.0, height: 32.0))
                 
                 let imgView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: viewLeft.frame.size.height, height: viewLeft.frame.size.height))
@@ -47,10 +44,8 @@ class UITextFieldPadding: UITextField {
      Right Padding view image height and width is fixed (32,32)
      */
     @IBInspectable var leftPaddingText: String? {
-        didSet
-        {
-            if leftPaddingText != nil
-            {
+        didSet {
+            if leftPaddingText != nil {
                 let viewLeft = UIView(frame: CGRect.init(x: 0, y: 0, width: 32.0, height: 32.0))
                 
                 let lblLeftText = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: viewLeft.frame.size.height, height: viewLeft.frame.size.height))
@@ -66,10 +61,8 @@ class UITextFieldPadding: UITextField {
 
     //MARK:- Right padding
     @IBInspectable var rightPaddingViewImage: UIImage? {
-        didSet
-        {
-            if rightPaddingViewImage != nil
-            {
+        didSet {
+            if rightPaddingViewImage != nil {
                 let viewRight = UIView(frame: CGRect.init(x: UIScreen.main.bounds.size.width - 80.0, y: 0, width: 40.0, height: 40.0))
                 
                 let imgView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: viewRight.frame.size.height, height: viewRight.frame.size.height))

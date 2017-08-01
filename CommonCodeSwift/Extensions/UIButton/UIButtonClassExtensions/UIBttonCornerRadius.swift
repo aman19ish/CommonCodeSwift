@@ -21,8 +21,7 @@ class UIBttonCornerRadius: UIButtonBorder {
     
     //MARK:- Button Make Circle
     @IBInspectable var makeCircle: Bool = false {
-        didSet
-        {
+        didSet {
             layer.masksToBounds = cornerRadius > 0
         }
     }

@@ -122,20 +122,18 @@ extension UIImage {
         let maxWidth : CGFloat = targetSize.height
         var imgRatio : CGFloat = actualWidth/actualHeight
         let maxRatio : CGFloat = maxWidth/maxHeight
-        if (actualHeight > maxHeight || actualWidth > maxWidth){
-            if(imgRatio < maxRatio){
+        if (actualHeight > maxHeight || actualWidth > maxWidth ) {
+            if(imgRatio < maxRatio ) {
                 //adjust width according to maxHeight
                 imgRatio = maxHeight / actualHeight
                 actualWidth = imgRatio * actualWidth
                 actualHeight = maxHeight
-            }
-            else if(imgRatio > maxRatio){
+            } else if(imgRatio > maxRatio ) {
                 //adjust height according to maxWidth
                 imgRatio = maxWidth / actualWidth
                 actualHeight = imgRatio * actualHeight
                 actualWidth = maxWidth
-            }
-            else{
+            } else {
                 actualHeight = maxHeight
                 actualWidth = maxWidth
             }
@@ -160,20 +158,18 @@ extension UIImage {
         var imgRatio : CGFloat = actualWidth/actualHeight
         let maxRatio : CGFloat = maxWidth/maxHeight
         var compressionQuality : CGFloat = compressionQuality
-        if (actualHeight > maxHeight || actualWidth > maxWidth){
-            if(imgRatio < maxRatio){
+        if (actualHeight > maxHeight || actualWidth > maxWidth ) {
+            if(imgRatio < maxRatio) {
                 //adjust width according to maxHeight
                 imgRatio = maxHeight / actualHeight
                 actualWidth = imgRatio * actualWidth
                 actualHeight = maxHeight
-            }
-            else if(imgRatio > maxRatio){
+            } else if(imgRatio > maxRatio) {
                 //adjust height according to maxWidth
                 imgRatio = maxWidth / actualWidth
                 actualHeight = imgRatio * actualHeight
                 actualWidth = maxWidth
-            }
-            else{
+            } else {
                 actualHeight = maxHeight
                 actualWidth = maxWidth
                 compressionQuality = 1

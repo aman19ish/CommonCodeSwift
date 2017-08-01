@@ -32,8 +32,7 @@ class UIViewBorder: UIView {
     }
     
     @IBInspectable var makeCircle: Bool = false {
-        didSet
-        {
+        didSet {
             layer.masksToBounds = cornerRadius > 0
         }
     }

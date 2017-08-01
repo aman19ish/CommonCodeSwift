@@ -19,11 +19,9 @@ class UIViewClassExtension: UIViewBorder {
     }
     */
 
-    override func layoutSubviews()
-    {
+    override func layoutSubviews() {
         super.layoutSubviews()
-        if makeCircle
-        {
+        if makeCircle {
             layer.cornerRadius = self.bounds.size.width / 2
             clipsToBounds = true
         }
