@@ -41,6 +41,7 @@
 		4CCC5D5F1EEFF75700012218 /* UIViewClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D5E1EEFF75700012218 /* UIViewClassExtension.swift */; };
 		4CCC5D611EEFF76D00012218 /* UIViewBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D601EEFF76D00012218 /* UIViewBorder.swift */; };
 		4CDEB7E41F319AE000290BDB /* GetCurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB7E31F319AE000290BDB /* GetCurrentLocation.swift */; };
+		4CDEB8231F31D75100290BDB /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB8221F31D75100290BDB /* LocationHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		4CCC5D5E1EEFF75700012218 /* UIViewClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewClassExtension.swift; sourceTree = "<group>"; };
 		4CCC5D601EEFF76D00012218 /* UIViewBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewBorder.swift; sourceTree = "<group>"; };
 		4CDEB7E31F319AE000290BDB /* GetCurrentLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCurrentLocation.swift; sourceTree = "<group>"; };
+		4CDEB8221F31D75100290BDB /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,6 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				4CDEB7E31F319AE000290BDB /* GetCurrentLocation.swift */,
+				4CDEB8221F31D75100290BDB /* LocationHelper.swift */,
 			);
 			name = CLLocation;
 			path = AGDatePicker/CLLocation;
@@ -575,6 +578,7 @@
 				4C4E44731EE00DF8004A8F78 /* UIButtonExtension.swift in Sources */,
 				4C89F2B91F30614D007B0D43 /* AGDatePicker.swift in Sources */,
 				4C4E446E1EE00DAD004A8F78 /* UIButtonBorder.swift in Sources */,
+				4CDEB8231F31D75100290BDB /* LocationHelper.swift in Sources */,
 				4C4E446D1EE00DAD004A8F78 /* UIBttonCornerRadius.swift in Sources */,
 				4C77E6EA1EE56832000ADDFA /* UIImageViewExtension.swift in Sources */,
 				4CCC5D4E1EEFD1EE00012218 /* UITableViewCellExtension.swift in Sources */,

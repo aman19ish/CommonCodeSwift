@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import MapKit
 
 enum LocationAuthorizedType {
     case Always
@@ -15,9 +16,10 @@ enum LocationAuthorizedType {
 }
 
 class GetCurrentLocation: CLLocationManager {
+    
     //MARK:- Public Variables
     var currentLocation: CLLocation?
-    var authorizedType: LocationAuthorizedType = .WhenInUse  //Set according to imfo.Plist permision for location
+    var authorizedType: LocationAuthorizedType = .WhenInUse  //Set according to info.Plist permision for location
     //MARK:- Private Variables
     fileprivate var sendLocation = {(_ location: CLLocation?) -> () in }
     
@@ -45,13 +47,11 @@ class GetCurrentLocation: CLLocationManager {
         self.delegate = self
         self.distanceFilter = kCLDistanceFilterNone
         self.desiredAccuracy = kCLLocationAccuracyBest
-        if !isLocationPermissionAuthorized() {
-            switch authorizedType {
-            case .Always:
-                requestAlwaysUsagePermission()
-            case .WhenInUse:
-                requestForUsagePermission()
-            }
+        switch authorizedType {
+        case .Always:
+            requestAlwaysUsagePermission()
+        case .WhenInUse:
+            requestForUsagePermission()
         }
         sendLocation = getLocation
     }
