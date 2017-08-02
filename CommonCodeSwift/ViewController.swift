@@ -13,17 +13,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var textImageView: UIImageViewExtension!
     let image = UIImage.init(named: "TestImage")
     
-    //MARK:- View life cycel
+    //MARK:- View Life Cycel
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         let compressImage = image?.compressImage(image: image!, targetSize: CGSize.init(width: 200, height: 200), compressionQuality: 0.50)
         textImageView.image = compressImage
+        
+        //Get Current Location
+        let location = GetCurrentLocation.sharedInstance
+        location.getCurrentLocation { (currentLocation) in
+            print(currentLocation ?? "")
+
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
 }
 

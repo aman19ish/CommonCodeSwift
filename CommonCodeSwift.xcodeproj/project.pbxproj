@@ -40,6 +40,7 @@
 		4CCC5D571EEFE05700012218 /* UItextViewBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D561EEFE05700012218 /* UItextViewBorder.swift */; };
 		4CCC5D5F1EEFF75700012218 /* UIViewClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D5E1EEFF75700012218 /* UIViewClassExtension.swift */; };
 		4CCC5D611EEFF76D00012218 /* UIViewBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D601EEFF76D00012218 /* UIViewBorder.swift */; };
+		4CDEB7E41F319AE000290BDB /* GetCurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB7E31F319AE000290BDB /* GetCurrentLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		4CCC5D561EEFE05700012218 /* UItextViewBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UItextViewBorder.swift; sourceTree = "<group>"; };
 		4CCC5D5E1EEFF75700012218 /* UIViewClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewClassExtension.swift; sourceTree = "<group>"; };
 		4CCC5D601EEFF76D00012218 /* UIViewBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewBorder.swift; sourceTree = "<group>"; };
+		4CDEB7E31F319AE000290BDB /* GetCurrentLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCurrentLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +284,7 @@
 		4C87955C1EDD95ED007EB30E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4CDEB7DE1F31935400290BDB /* CLLocation */,
 				4C89F2B71F306124007B0D43 /* AGDatePicker */,
 				4CCC5D5B1EEFF73F00012218 /* UIView */,
 				4CCC5D511EEFDFEE00012218 /* UITextView */,
@@ -402,6 +405,15 @@
 			children = (
 			);
 			path = UIViewExtended;
+			sourceTree = "<group>";
+		};
+		4CDEB7DE1F31935400290BDB /* CLLocation */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEB7E31F319AE000290BDB /* GetCurrentLocation.swift */,
+			);
+			name = CLLocation;
+			path = AGDatePicker/CLLocation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -555,6 +567,7 @@
 				4CCC5D4A1EEFA78400012218 /* UITextFieldPadding.swift in Sources */,
 				4C77E6E81EE5661C000ADDFA /* UIImageViewRadius.swift in Sources */,
 				4CCC5D571EEFE05700012218 /* UItextViewBorder.swift in Sources */,
+				4CDEB7E41F319AE000290BDB /* GetCurrentLocation.swift in Sources */,
 				4C8794F71EDD52BA007EB30E /* CommonCodeSwift.xcdatamodeld in Sources */,
 				4CCC5D611EEFF76D00012218 /* UIViewBorder.swift in Sources */,
 				4C77E6E61EE564C6000ADDFA /* UIImageViewBorder.swift in Sources */,
