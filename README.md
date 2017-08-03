@@ -11,5 +11,7 @@ ClassExtension is use for StoryBoard And by Instance of class and Extensions is 
   * UITextFieldExtension
   * UITextViewExtension
   * UIViewExtension 
+  * StringExtended (InProgress...)
+  * NSMutableAttribuedString
   * AGDatePicker (Now it wanna be more updates...)
   etc.(InProgress)
