@@ -23,8 +23,10 @@ class ViewController: UIViewController {
         let location = GetCurrentLocation.sharedInstance
         location.getCurrentLocation { (currentLocation) in
             print(currentLocation ?? "")
-
         }
+        let a = "".first
+        print(a)
+        print("ashdsa dsfsdfsdf".uppercaseFirstChar)
     }
 
     override func didReceiveMemoryWarning() {
