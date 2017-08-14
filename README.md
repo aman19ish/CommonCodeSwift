@@ -2,7 +2,7 @@
 Swift common extensions in Xcode 8.3.2
 CommonoCdeSwift have Classextensions and Extension.
 ClassExtension is use for StoryBoard And by Instance of class and Extensions is directly use by Class Name.
-  * UIImageViewExtension
+  * [UIImageViewExtension](#UIImageViewExtension)
   * UIImageExtension
   * UILabelExtension
   * UIButtonExtension
@@ -11,10 +11,14 @@ ClassExtension is use for StoryBoard And by Instance of class and Extensions is 
   * UITextFieldExtension
   * UITextViewExtension
   * UIViewExtension 
+  * DateExtension (InProgress...)
   * StringExtended (InProgress...)
   * NSMutableAttribuedString
   * AGDatePicker (Now it wanna be more updates...)
+  * UINaviagtionExtension (InProgress...)
   etc.(InProgress).
+  
+  ### UIImageViewExtension
 
 
 # LICENSE
