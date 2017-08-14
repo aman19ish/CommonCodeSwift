@@ -11,12 +11,14 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        self.window = UIWindow(frame:UIScreen.main.bounds)
+        self.window?.makeKeyAndVisible()
+        
         // Override point for customization after application launch.
+        configureViewController()
         return true
     }
 
@@ -89,5 +91,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+}
+
+extension AppDelegate {
+    func configureViewController() {
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let navigationController = storyBoard.instantiateViewController(withIdentifier: "controller") as! UINavigationController
+        navigationController.setupNavigationBarView()
+        let view = storyBoard.instantiateViewController(withIdentifier: "view") as! ViewController
+        navigationController.viewControllers.append(view)
+        window?.rootViewController = navigationController
+
+    }
 }
 

@@ -33,6 +33,9 @@
 		4C8795121EDD52BA007EB30E /* CommonCodeSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8795111EDD52BA007EB30E /* CommonCodeSwiftUITests.swift */; };
 		4C87955F1EDD95FB007EB30E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C87955E1EDD95FB007EB30E /* AppDelegate.swift */; };
 		4C89F2B91F30614D007B0D43 /* AGDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89F2B81F30614D007B0D43 /* AGDatePicker.swift */; };
+		4C8B07061F3979AF00EF1145 /* DateExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B07051F3979AF00EF1145 /* DateExtended.swift */; };
+		4C8C10B41F3DDA340034B4AE /* UINaviagtionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C10B31F3DDA340034B4AE /* UINaviagtionExtension.swift */; };
+		4CB3F34F1F41AD67002AFF02 /* UINavigationProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3F34E1F41AD67002AFF02 /* UINavigationProperties.swift */; };
 		4CCC5D441EEFA6A600012218 /* UITextFieldBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D431EEFA6A600012218 /* UITextFieldBorder.swift */; };
 		4CCC5D461EEFA6BA00012218 /* UITextFieldClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */; };
 		4CCC5D4A1EEFA78400012218 /* UITextFieldPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D491EEFA78400012218 /* UITextFieldPadding.swift */; };
@@ -96,6 +99,9 @@
 		4C8795131EDD52BA007EB30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C87955E1EDD95FB007EB30E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C89F2B81F30614D007B0D43 /* AGDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGDatePicker.swift; sourceTree = "<group>"; };
+		4C8B07051F3979AF00EF1145 /* DateExtended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtended.swift; sourceTree = "<group>"; };
+		4C8C10B31F3DDA340034B4AE /* UINaviagtionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINaviagtionExtension.swift; sourceTree = "<group>"; };
+		4CB3F34E1F41AD67002AFF02 /* UINavigationProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationProperties.swift; sourceTree = "<group>"; };
 		4CCC5D431EEFA6A600012218 /* UITextFieldBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldBorder.swift; sourceTree = "<group>"; };
 		4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldClassExtension.swift; sourceTree = "<group>"; };
 		4CCC5D491EEFA78400012218 /* UITextFieldPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldPadding.swift; sourceTree = "<group>"; };
@@ -299,6 +305,8 @@
 		4C87955C1EDD95ED007EB30E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4C8C10B21F3DD97E0034B4AE /* UINavigationExtension */,
+				4C8B07041F39799500EF1145 /* Date */,
 				4C52B7741F33000800F87031 /* String */,
 				4CDEB7DE1F31935400290BDB /* CLLocation */,
 				4C89F2B71F306124007B0D43 /* AGDatePicker */,
@@ -329,6 +337,23 @@
 				4C89F2B81F30614D007B0D43 /* AGDatePicker.swift */,
 			);
 			path = AGDatePicker;
+			sourceTree = "<group>";
+		};
+		4C8B07041F39799500EF1145 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				4C8B07051F3979AF00EF1145 /* DateExtended.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		4C8C10B21F3DD97E0034B4AE /* UINavigationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4C8C10B31F3DDA340034B4AE /* UINaviagtionExtension.swift */,
+				4CB3F34E1F41AD67002AFF02 /* UINavigationProperties.swift */,
+			);
+			path = UINavigationExtension;
 			sourceTree = "<group>";
 		};
 		4CCC5D3E1EEFA66B00012218 /* UITextField */ = {
@@ -495,14 +520,14 @@
 		4C8794E31EDD52BA007EB30E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = aman19ish;
 				TargetAttributes = {
 					4C8794EA1EDD52BA007EB30E = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 8XDB8SC3ZS;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					4C8795011EDD52BA007EB30E = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -573,6 +598,7 @@
 				4C77E6D41EE55480000ADDFA /* UILabelBorder.swift in Sources */,
 				4C77E6E11EE55A18000ADDFA /* UIImageExtended.swift in Sources */,
 				4CCC5D551EEFE02A00012218 /* UITextViewClassExtension.swift in Sources */,
+				4C8B07061F3979AF00EF1145 /* DateExtended.swift in Sources */,
 				4C6209D31EF8E893008DB067 /* GlobalEnums.swift in Sources */,
 				4CCC5D5F1EEFF75700012218 /* UIViewClassExtension.swift in Sources */,
 				4CCC5D441EEFA6A600012218 /* UITextFieldBorder.swift in Sources */,
@@ -582,12 +608,14 @@
 				4C77E6D61EE55502000ADDFA /* UILabelCornerRadius.swift in Sources */,
 				4C4E44711EE00DAD004A8F78 /* UIButtonSublayer.swift in Sources */,
 				4C52B7781F3327D700F87031 /* NSMutableAttributedStringExtended.swift in Sources */,
+				4C8C10B41F3DDA340034B4AE /* UINaviagtionExtension.swift in Sources */,
 				4CCC5D4A1EEFA78400012218 /* UITextFieldPadding.swift in Sources */,
 				4C77E6E81EE5661C000ADDFA /* UIImageViewRadius.swift in Sources */,
 				4CCC5D571EEFE05700012218 /* UItextViewBorder.swift in Sources */,
 				4CDEB7E41F319AE000290BDB /* GetCurrentLocation.swift in Sources */,
 				4C8794F71EDD52BA007EB30E /* CommonCodeSwift.xcdatamodeld in Sources */,
 				4CCC5D611EEFF76D00012218 /* UIViewBorder.swift in Sources */,
+				4CB3F34F1F41AD67002AFF02 /* UINavigationProperties.swift in Sources */,
 				4C52B7761F33005800F87031 /* StringExtended.swift in Sources */,
 				4C77E6E61EE564C6000ADDFA /* UIImageViewBorder.swift in Sources */,
 				4C4E446F1EE00DAD004A8F78 /* UIButtonClassExtension.swift in Sources */,
@@ -751,12 +779,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8XDB8SC3ZS;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CommonCodeSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aman.CommonCodeSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -765,12 +794,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8XDB8SC3ZS;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CommonCodeSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aman.CommonCodeSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

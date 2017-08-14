@@ -20,6 +20,7 @@ class GetCurrentLocation: CLLocationManager {
     //MARK:- Public Variables
     var currentLocation: CLLocation?
     var authorizedType: LocationAuthorizedType = .WhenInUse  //Set according to info.Plist permision for location
+    
     //MARK:- Private Variables
     fileprivate var sendLocation = {(_ location: CLLocation?) -> () in }
     

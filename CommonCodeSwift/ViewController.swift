@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINCExtendedDelegate {
     
     @IBOutlet weak var textImageView: UIImageViewExtension!
     let image = UIImage.init(named: "TestImage")
@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     //MARK:- View Life Cycel
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureNaivationBar()
         let compressImage = image?.compressImage(image: image!, targetSize: CGSize.init(width: 200, height: 200), compressionQuality: 0.50)
         textImageView.image = compressImage
         
@@ -29,9 +30,27 @@ class ViewController: UIViewController {
         print("ashdsa dsfsdfsdf".uppercaseFirstChar)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    func configureNaivationBar() {
+        navigationController?.setStatusBarHiddenStatus(isHidden: true, andNavigationBarHiddenStatus: false)
+        self.navigationController?.customDelegate = self
+        navigationController?.setupNavigationBar(navItem: navigationItem, title: "Testing", leftBarButtonType: .back, rightBarItemType: .threeIcon
+            , rightBarTitle: nil, arrRightBarImages: ["notifications", "notifications", "notifications"])
+    }
+}
+
+//MARK:- UINCExtendedDelegate Methods
+extension ViewController {
+    func navigationBarButtonItemClicked(_ buttonType: NavigationBarButton, sender: UIButton) {
+        
+    }
+
 }
 
