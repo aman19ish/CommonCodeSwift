@@ -2,24 +2,36 @@
 Swift common extensions in Xcode 8.3.2
 CommonoCdeSwift have Classextensions and Extension.
 ClassExtension is use for StoryBoard And by Instance of class and Extensions is directly use by Class Name.
-  * [UIImageViewExtension](#UIImageViewExtension)
-  * UIImageExtension
-  * UILabelExtension
-  * UIButtonExtension
-  * UICollectionViewExtension
-  * UITableViewExtension
-  * UITextFieldExtension
-  * UITextViewExtension
-  * UIViewExtension 
-  * DateExtension (InProgress...)
-  * StringExtended (InProgress...)
-  * NSMutableAttribuedString
-  * AGDatePicker (Now it wanna be more updates...)
-  * UINaviagtionExtension (InProgress...)
+  * [UIImageViewExtension](#uiimageviewextension)
+  * [UIImageExtension](#uiimageextension)
+  * [UILabelExtension](#uilabelextension)
+  * [UIButtonExtension](#uibuttonextension)
+  * [UICollectionViewExtension](#uicollectionviewextension)
+  * [UITableViewExtension](#uitableviewextension)
+  * [UITextFieldExtension](#uitextfieldextension)
+  * [UITextViewExtension](#uitextviewextension)
+  * [UIViewExtension](#uiviewextension)
+  * [DateExtension](#dateextension) (InProgress...)
+  * [StringExtended](#stringextended) (InProgress...)
+  * [NSMutableAttribuedString](#nsmutableattribuedstring)
+  * [AGDatePicker](#agdatepicker) (Now it wanna be more updates...)
+  * [UINaviagtionExtension](#uinaviagtionextension) (InProgress...)
   etc.(InProgress).
   
-  ### UIImageViewExtension
-
+### UIImageViewExtension
+### UIImageExtension
+### UILabelExtension
+### UIButtonExtension
+### UICollectionViewExtension
+### UITableViewExtension
+### UITextFieldExtension
+### UITextViewExtension
+### UIViewExtension
+### DateExtension
+### StringExtended
+### NSMutableAttribuedString
+### AGDatePicker
+### UINaviagtionExtension
 
 # LICENSE
 
