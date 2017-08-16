@@ -33,5 +33,13 @@ class UIImageViewRadius: UIImageViewBorder {
             layer.masksToBounds = cornerRadius > 0
         }
     }
+    
+    //MARK:- Deafult override methods
+    override func layoutSubviews() {
+        if makeCircle {
+            layer.cornerRadius = self.bounds.size.width / 2
+            clipsToBounds = true
+        }
+    }
 
 }

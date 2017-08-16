@@ -48,8 +48,7 @@ class UIButtonSublayer: UIBttonCornerRadius {
     }
     
     //MARK:- Deafult override methods
-    override func layoutSubviews()
-    {
+    override func layoutSubviews() {
         super.layoutSubviews()
         if leftSublayer {
             setLeftBorderWithCALayer()
