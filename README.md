@@ -2,7 +2,7 @@
 Swift common extensions in Xcode 8.3.2
 CommonoCdeSwift have Classextensions and Extension.
 ClassExtension is use for StoryBoard And by Instance of class and Extensions is directly use by Class Name.
-  * [UIImageViewExtension](#uiimageviewextension)
+  * [UIImageViewExtension](#uiimageviewextension)  
   * [UIImageExtension](#uiimageextension)
   * [UILabelExtension](#uilabelextension)
   * [UIButtonExtension](#uibuttonextension)
@@ -19,19 +19,97 @@ ClassExtension is use for StoryBoard And by Instance of class and Extensions is 
   etc.(InProgress).
   
 ### UIImageViewExtension
-### UIImageExtension
-### UILabelExtension
-### UIButtonExtension
-### UICollectionViewExtension
-### UITableViewExtension
-### UITextFieldExtension
-### UITextViewExtension
-### UIViewExtension
-### DateExtension
-### StringExtended
-### NSMutableAttribuedString
-### AGDatePicker
-### UINaviagtionExtension
+UIImageViewExtension use directly by storyboard and it have diffrent functionality like:
+* Make circle
+* Corner circle
+* Directly make cirle
+* Border width 
+* Border color
+For Using This Class directly inherit it into storyboard UIImageView And Other extsions class also use as same:
+* # ADD IMAGE #
+Example :-
+* # ADD IMAGE #
+
+## UIImageExtension
+UIImageExtension fetaures have:
+* ##### Compress Image #####
+      let compressImage = image?.compressImage(image: image!, targetSize: CGSize.init(width: 200, height: 200), compressionQuality: 0.50)
+* ##### Fix Image Orientation #####
+      image?.fixOrientation()
+      
+## UILabelExtension
+UILabelExtesion features have:
+* Corner radius
+* Border width
+* Border color
+
+Example:
+* # ADD IMAGE #
+
+## UIButtonExtension
+UIBUttonExtension features have:
+* Add sublayer on button driectly by storyboard
+  * SublayerBorderWidth
+  * SublayerBorderColorSelected
+  * SublayerBorderColorNormal
+  * LeftSublayer
+  * RightSublayer
+  * BottomSublayer
+  * TopSublayer
+* Corner Radius
+* Directly make circle
+* Border width
+* Border color
+* Shadow radius 
+* Shadow color
+
+Example :-
+* # ADD IMAGE #
+
+## UICollectionViewExtension
+UICollectionView Extension Have a single function which is use for get the cell identifier name, but condition is that class name and cell identifire name must be same.
+- Syntax :- UICollectionViewCell.getCellIdentifier()
+
+## UITableViewExtension
+UITableVIew Extension also have a single function which is use for get the cell identifier name, but cell identifier name must be same as class name.
+- Syntax :- UITableViewCell.getCellIdentifier()
+
+## UITextFieldExtension
+UITextFieldExtension features have:
+* PlaceHolder Color
+* Border Width
+* Border Color
+* LeftPaddingWidth
+* LeftPaddingViewImage
+* LeftPaddingText
+* RightPaddingViewImage
+
+Example :-
+* # ADD IMAGE #
+
+## UITextViewExtension
+UITextViewExtension features have:
+* Border Width
+* Border Color
+
+Example :-
+* # ADD IMAGE #
+
+## UIViewExtension
+UIViewExtension features have:
+* BorderWidth
+* BorderColor
+* CornerRadius
+* MakeCircle
+* AsPerWidthMakeCircle
+
+Example :-
+* # ADD IMAGE #
+## DateExtension
+## StringExtended
+## NSMutableAttribuedString
+## AGDatePicker
+## UINaviagtionExtension
 
 # LICENSE
 
