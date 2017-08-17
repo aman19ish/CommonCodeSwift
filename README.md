@@ -97,8 +97,28 @@ UIViewExtension features have:
 ## AGDatePicker
 ## UINaviagtionExtension
 
-
-<p>Example:<p>
+For Navigation bar call this  in app delegate and change according to you:
+```swift
+func configureViewController() {
+let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+let navigationController = storyBoard.instantiateViewController(withIdentifier: "controller") as! UINavigationController
+        navigationController.setupNavigationBarView()
+        let view = storyBoard.instantiateViewController(withIdentifier: "view") as! ViewController
+        navigationController.viewControllers.append(view)
+        window?.rootViewController = navigationController
+        }
+```
+For Configure the navigation bar in class:
+```swift
+func configureNaivationBar() {
+        navigationController?.setStatusBarHiddenStatus(isHidden: true, andNavigationBarHiddenStatus: false)
+        self.navigationController?.customDelegate = self
+        navigationController?.setupNavigationBar(navItem: navigationItem, title: "Testing", leftBarButtonType: .back, rightBarItemType: .threeIcon
+            , rightBarTitle: nil, arrRightBarImages: ["notifications", "notifications", "notifications"])
+    } 
+```
+    
+### Example: ###
 
 ![Example](https://github.com/aman19ish/CommonCodeSwift/blob/master/ExampleImages/DeviceExample.png)
 
