@@ -25,10 +25,10 @@ UIImageViewExtension use directly by storyboard and it have diffrent functionali
 * Directly make cirle
 * Border width 
 * Border color
-For Using This Class directly inherit it into storyboard UIImageView And Other extsions class also use as same:
-* # ADD IMAGE #
-Example :-
-* # ADD IMAGE #
+
+<p>For Using This Class directly inherit it into storyboard UIImageView And Other extsions class also use as same:<p>
+
+![Example](https://github.com/aman19ish/CommonCodeSwift/blob/master/ExampleImages/UIImageViewExtensionInherit.png)
 
 ## UIImageExtension
 UIImageExtension fetaures have:
@@ -42,9 +42,6 @@ UILabelExtesion features have:
 * Corner radius
 * Border width
 * Border color
-
-Example:
-* # ADD IMAGE #
 
 ## UIButtonExtension
 UIBUttonExtension features have:
@@ -62,9 +59,6 @@ UIBUttonExtension features have:
 * Border color
 * Shadow radius 
 * Shadow color
-
-Example :-
-* # ADD IMAGE #
 
 ## UICollectionViewExtension
 UICollectionView Extension Have a single function which is use for get the cell identifier name, but condition is that class name and cell identifire name must be same.
@@ -84,16 +78,10 @@ UITextFieldExtension features have:
 * LeftPaddingText
 * RightPaddingViewImage
 
-Example :-
-* # ADD IMAGE #
-
 ## UITextViewExtension
 UITextViewExtension features have:
 * Border Width
 * Border Color
-
-Example :-
-* # ADD IMAGE #
 
 ## UIViewExtension
 UIViewExtension features have:
@@ -103,13 +91,16 @@ UIViewExtension features have:
 * MakeCircle
 * AsPerWidthMakeCircle
 
-Example :-
-* # ADD IMAGE #
 ## DateExtension
 ## StringExtended
 ## NSMutableAttribuedString
 ## AGDatePicker
 ## UINaviagtionExtension
+
+
+<p>Example:<p>
+
+![Example](https://github.com/aman19ish/CommonCodeSwift/blob/master/ExampleImages/DeviceExample.png)
 
 # LICENSE
 
