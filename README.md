@@ -33,10 +33,14 @@ UIImageViewExtension use directly by storyboard and it have diffrent functionali
 ## UIImageExtension
 UIImageExtension fetaures have:
 * ##### Compress Image #####
-      let compressImage = image?.compressImage(image: image!, targetSize: CGSize.init(width: 200, height: 200), compressionQuality: 0.50)
+```swift
+let image = UIImage.init(named: "TestImage")
+let compressImage = image?.compressImage(image: image!, targetSize: CGSize.init(width: 200, height: 200), compressionQuality: 0.50)
+```
 * ##### Fix Image Orientation #####
-      image?.fixOrientation()
-      
+```swift
+image?.fixOrientation()
+```
 ## UILabelExtension
 UILabelExtesion features have:
 * Corner radius
