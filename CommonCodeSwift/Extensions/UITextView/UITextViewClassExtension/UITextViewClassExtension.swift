@@ -21,6 +21,7 @@ class UITextViewClassExtension: UItextViewBorder {
     override func layoutSubviews() {
         super.layoutSubviews()
         setup()
+        font = FontType.getFont(rawValue: fontTypeInterger, fontSize: fontSize)
     }
     
     func setup() {

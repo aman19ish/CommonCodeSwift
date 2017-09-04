@@ -1,5 +1,5 @@
 //
-//  UItextFieldCustomFont.swift
+//  UITextViewCustomFont.swift
 //  CommonCodeSwift
 //
 //  Created by Aman Gupta on 04/09/17.
@@ -9,8 +9,7 @@
 import UIKit
 @IBDesignable
 
-class UItextFieldCustomFont: UITextField {
-    
+class UITextViewCustomFont: UITextView {
     @IBInspectable var fontSize: CGFloat = 18 {
         didSet {
         }
@@ -20,5 +19,4 @@ class UItextFieldCustomFont: UITextField {
         didSet {
         }
     }
-
 }

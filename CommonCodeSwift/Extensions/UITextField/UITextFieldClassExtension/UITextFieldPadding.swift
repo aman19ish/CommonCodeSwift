@@ -9,7 +9,7 @@
 import UIKit
 @IBDesignable
 
-class UITextFieldPadding: UItextFieldCustomFont {
+class UITextFieldPadding: UITextField {
     // MARK: - Left padding
     @IBInspectable var leftPaddingWidth: CGFloat = 0.0 {
         didSet {

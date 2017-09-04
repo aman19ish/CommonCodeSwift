@@ -9,7 +9,7 @@
 import UIKit
 @IBDesignable
 
-class UItextViewBorder: UITextView {
+class UItextViewBorder: UITextViewCustomFont {
     // MARK: - TextView border
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {

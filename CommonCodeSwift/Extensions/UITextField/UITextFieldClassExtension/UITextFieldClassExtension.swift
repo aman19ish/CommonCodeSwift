@@ -20,8 +20,4 @@ class UITextFieldClassExtension: UITextFieldBorder {
         }
     }
     
-    override func layoutSubviews() {
-        font = FontType.getFont(rawValue: fontTypeInterger, fontSize: fontSize)
-    }    
-
 }

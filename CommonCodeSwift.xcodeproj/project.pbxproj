@@ -26,7 +26,7 @@
 		4C85A8C51F5D5F8800D93413 /* UILabelCustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9D1B881F4D421E00635C92 /* UILabelCustomFont.swift */; };
 		4C85A8C71F5D6C6600D93413 /* UIButtonCustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C85A8C61F5D6C6600D93413 /* UIButtonCustomFont.swift */; };
 		4C85A8CB1F5D736B00D93413 /* UIButtonCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C85A8CA1F5D736B00D93413 /* UIButtonCornerRadius.swift */; };
-		4C85A8CD1F5D763400D93413 /* UItextFieldCustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C85A8CC1F5D763400D93413 /* UItextFieldCustomFont.swift */; };
+		4C85A8CF1F5D7B3500D93413 /* UITextViewCustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C85A8CE1F5D7B3500D93413 /* UITextViewCustomFont.swift */; };
 		4C8794F11EDD52BA007EB30E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8794F01EDD52BA007EB30E /* ViewController.swift */; };
 		4C8794F41EDD52BA007EB30E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8794F21EDD52BA007EB30E /* Main.storyboard */; };
 		4C8794F71EDD52BA007EB30E /* CommonCodeSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C8794F51EDD52BA007EB30E /* CommonCodeSwift.xcdatamodeld */; };
@@ -89,7 +89,7 @@
 		4C77E6EB1EE569C6000ADDFA /* UIImageViewExtended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtended.swift; sourceTree = "<group>"; };
 		4C85A8C61F5D6C6600D93413 /* UIButtonCustomFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonCustomFont.swift; sourceTree = "<group>"; };
 		4C85A8CA1F5D736B00D93413 /* UIButtonCornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonCornerRadius.swift; sourceTree = "<group>"; };
-		4C85A8CC1F5D763400D93413 /* UItextFieldCustomFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UItextFieldCustomFont.swift; sourceTree = "<group>"; };
+		4C85A8CE1F5D7B3500D93413 /* UITextViewCustomFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewCustomFont.swift; sourceTree = "<group>"; };
 		4C8794EB1EDD52BA007EB30E /* CommonCodeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonCodeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8794F01EDD52BA007EB30E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C8794F31EDD52BA007EB30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -380,7 +380,6 @@
 				4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */,
 				4CCC5D431EEFA6A600012218 /* UITextFieldBorder.swift */,
 				4CCC5D491EEFA78400012218 /* UITextFieldPadding.swift */,
-				4C85A8CC1F5D763400D93413 /* UItextFieldCustomFont.swift */,
 			);
 			path = UITextFieldClassExtension;
 			sourceTree = "<group>";
@@ -422,6 +421,7 @@
 			children = (
 				4CCC5D541EEFE02A00012218 /* UITextViewClassExtension.swift */,
 				4CCC5D561EEFE05700012218 /* UItextViewBorder.swift */,
+				4C85A8CE1F5D7B3500D93413 /* UITextViewCustomFont.swift */,
 			);
 			path = UITextViewClassExtension;
 			sourceTree = "<group>";
@@ -608,6 +608,7 @@
 				4C77E6D41EE55480000ADDFA /* UILabelBorder.swift in Sources */,
 				4C77E6E11EE55A18000ADDFA /* UIImageExtended.swift in Sources */,
 				4CCC5D551EEFE02A00012218 /* UITextViewClassExtension.swift in Sources */,
+				4C85A8CF1F5D7B3500D93413 /* UITextViewCustomFont.swift in Sources */,
 				4C8B07061F3979AF00EF1145 /* DateExtended.swift in Sources */,
 				4C9D1B891F4D421E00635C92 /* UILabelCustomFont.swift in Sources */,
 				4C6209D31EF8E893008DB067 /* GlobalEnums.swift in Sources */,
@@ -622,7 +623,6 @@
 				4C8C10B41F3DDA340034B4AE /* UINaviagtionExtension.swift in Sources */,
 				4CCC5D4A1EEFA78400012218 /* UITextFieldPadding.swift in Sources */,
 				4C85A8CB1F5D736B00D93413 /* UIButtonCornerRadius.swift in Sources */,
-				4C85A8CD1F5D763400D93413 /* UItextFieldCustomFont.swift in Sources */,
 				4C77E6E81EE5661C000ADDFA /* UIImageViewRadius.swift in Sources */,
 				4CCC5D571EEFE05700012218 /* UItextViewBorder.swift in Sources */,
 				4CDEB7E41F319AE000290BDB /* GetCurrentLocation.swift in Sources */,
