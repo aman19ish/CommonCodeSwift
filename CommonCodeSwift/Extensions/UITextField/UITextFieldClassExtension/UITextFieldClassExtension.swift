@@ -10,16 +10,7 @@ import UIKit
 @IBDesignable
 
 class UITextFieldClassExtension: UITextFieldBorder {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-    
-    //MARK:- Placeholder color change
+    // MARK: - Placeholder color change
     @IBInspectable var placeHolderColor: UIColor? {
         get {
             return self.placeHolderColor
@@ -28,5 +19,9 @@ class UITextFieldClassExtension: UITextFieldBorder {
             self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSForegroundColorAttributeName: newValue!])
         }
     }
+    
+    override func layoutSubviews() {
+        font = FontType.getFont(rawValue: fontTypeInterger, fontSize: fontSize)
+    }    
 
 }

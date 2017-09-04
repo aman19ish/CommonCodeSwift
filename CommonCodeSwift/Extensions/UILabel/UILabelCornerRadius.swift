@@ -10,12 +10,12 @@ import UIKit
 @IBDesignable
 
 class UILabelCornerRadius: UILabelBorder {
-
-    //MARK:- Corner radius
+    // MARK: - Corner radius
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
             layer.masksToBounds = cornerRadius > 0
         }
     }
+    
 }

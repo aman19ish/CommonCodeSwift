@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum CellIndexPath_Row: Int {
     case Zero = 0
@@ -57,12 +58,21 @@ enum SuccessResult {
 }
 
 
-
-
-
-
-
-
-
-
-
+enum FontType {
+    case Default(size: CGFloat) , Small(size: CGFloat), Large(size: CGFloat)
+    
+    var fount: UIFont {
+        switch self {
+        case .Default(let size):
+            return UIFont.systemFont(ofSize: size)
+        case .Small(let size):
+            return UIFont.systemFont(ofSize: size)
+        case .Large(let size):
+            return UIFont.systemFont(ofSize: size)
+        }
+    }
+    
+    static func getFont(rawValue: Int, fontSize: CGFloat) -> UIFont  {
+        return FontType.Default(size: fontSize).fount
+    }
+}

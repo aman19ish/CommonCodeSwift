@@ -19,7 +19,6 @@ class ViewController: UIViewController, UINCExtendedDelegate {
         configureNaivationBar()
         let compressImage = image?.compressImage(image: image!, targetSize: CGSize.init(width: 200, height: 200), compressionQuality: 0.50)
         textImageView.image = compressImage
-        
         //Get Current Location
         let location = GetCurrentLocation.sharedInstance
         location.getCurrentLocation { (currentLocation) in

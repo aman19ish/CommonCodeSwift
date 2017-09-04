@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 extension UIImage {
-    
-    //MARK:- Image orientation Fixed
+    // MARK: - Image orientation fixed
     func fixOrientation() -> UIImage? {
         
         guard let cgImage = self.cgImage else {
@@ -97,7 +96,7 @@ extension UIImage {
         return img;
     }
     
-    //MARK:- Graphic image color
+    // MARK: - Graphic image color
     class func imageWithColor(color: UIColor,height: CGFloat) -> UIImage {
         
         let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: height)
@@ -109,10 +108,11 @@ extension UIImage {
         return image
     }
     
-    /* Image compression by decreasing image rect size , iamge per pixel density is same.
+    /**
+        Image compression by decreasing image rect size , iamge per pixel density is same.
      */
     
-    //MARK:- Image compression
+    // MARK: - Image compression
     func compressImageBYRect(image:UIImage, targetSize: CGSize) -> UIImage {
         // Reducing file size to a 10th
         
@@ -146,7 +146,8 @@ extension UIImage {
         return img!
     }
     
-    /* Image compression by decreasing image rect and quality both
+    /**
+     Image compression by decreasing image rect and quality both
      */
     
     func compressImage(image:UIImage, targetSize: CGSize,compressionQuality: CGFloat) -> UIImage {

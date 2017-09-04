@@ -9,9 +9,8 @@
 import UIKit
 @IBDesignable
 
-class UIButtonSublayer: UIBttonCornerRadius {
-    
-    //MARK:- Sublayer variables
+class UIButtonSublayer: UIButtonCornerRadius {
+    // MARK : - Sublayer variables
     @IBInspectable var sublayerBorderWidth: CGFloat = 1 {
         didSet {
         }
@@ -47,7 +46,7 @@ class UIButtonSublayer: UIBttonCornerRadius {
         }
     }
     
-    //MARK:- Deafult override methods
+    // MARK: - Deafult override methods
     override func layoutSubviews() {
         super.layoutSubviews()
         if leftSublayer {
@@ -66,9 +65,10 @@ class UIButtonSublayer: UIBttonCornerRadius {
             layer.cornerRadius = self.bounds.size.width / 2
             clipsToBounds = true
         }
+        titleLabel?.font = FontType.getFont(rawValue: fontTypeInterger, fontSize: fontSize)
     }
     
-    //MARK:- Set variables methods
+    // MARK: - Set variables methods
     fileprivate func setLeftBorderWithCALayer() {
         let border = CALayer()
         border.backgroundColor = self.isSelected ? sublayerBorderColorSelected?.cgColor : sublayerBorderColorNormal?.cgColor

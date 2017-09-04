@@ -10,8 +10,7 @@ import UIKit
 @IBDesignable
 
 class UIViewBorder: UIView {
-
-    //MARK:- View border
+    // MARK: - View border
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth

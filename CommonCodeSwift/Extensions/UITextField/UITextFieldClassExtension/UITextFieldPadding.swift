@@ -9,9 +9,8 @@
 import UIKit
 @IBDesignable
 
-class UITextFieldPadding: UITextField {
-    
-    //MARK:- Left padding
+class UITextFieldPadding: UItextFieldCustomFont {
+    // MARK: - Left padding
     @IBInspectable var leftPaddingWidth: CGFloat = 0.0 {
         didSet {
             let viewLeft = UIView(frame: CGRect.init(x: 0, y: 0, width: leftPaddingWidth, height: self.frame.size.height))
@@ -20,8 +19,8 @@ class UITextFieldPadding: UITextField {
         }
     }
     
-    /*
-     Left Padding view image height and width is fixed (32,32)
+    /**
+        Left Padding view image height and width is fixed (32,32)
     */
     
     @IBInspectable var leftPaddingViewImage: UIImage? {
@@ -40,8 +39,8 @@ class UITextFieldPadding: UITextField {
         }
     }
     
-    /*
-     Right Padding view image height and width is fixed (32,32)
+    /**
+        Right Padding view image height and width is fixed (32,32)
      */
     @IBInspectable var leftPaddingText: String? {
         didSet {
@@ -59,7 +58,7 @@ class UITextFieldPadding: UITextField {
         }
     }
 
-    //MARK:- Right padding
+    // MARK: - Right padding
     @IBInspectable var rightPaddingViewImage: UIImage? {
         didSet {
             if rightPaddingViewImage != nil {
@@ -75,4 +74,5 @@ class UITextFieldPadding: UITextField {
             }
         }
     }
+    
 }

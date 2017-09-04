@@ -1,17 +1,16 @@
 //
-//  UIBttonCornerRadius.swift
+//  UIButtonCornerRadius.swift
 //  CommonCodeSwift
 //
-//  Created by Aman Gupta on 30/05/17.
+//  Created by Aman Gupta on 04/09/17.
 //  Copyright © 2017 aman19ish. All rights reserved.
 //
 
 import UIKit
 @IBDesignable
 
-class UIBttonCornerRadius: UIButtonBorder {
-    
-    //MARK:- Corner Radius
+class UIButtonCornerRadius: UIButtonBorder {
+    // MARK: - Corner radius
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
@@ -19,10 +18,11 @@ class UIBttonCornerRadius: UIButtonBorder {
         }
     }
     
-    //MARK:- Button Make Circle
+    //MARK : - Button make circle
     @IBInspectable var makeCircle: Bool = false {
         didSet {
             layer.masksToBounds = cornerRadius > 0
         }
     }
+    
 }

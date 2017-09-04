@@ -10,7 +10,6 @@ import UIKit
 let kNavBarTitleColor = "titleColor"
 
 class UINavigationProperties {
-    
     var titleColor: UIColor?
     
     init(navBarProperticesDict: Dictionary<String, Any>) {
@@ -18,4 +17,5 @@ class UINavigationProperties {
             titleColor = navBarProperticesDict[kNavBarTitleColor] as? UIColor
         }
     }
+    
 }

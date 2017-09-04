@@ -9,9 +9,8 @@
 import UIKit
 @IBDesignable
 
-class UILabelBorder: UILabel {
-
-    //MARK:- UILabel Border
+class UILabelBorder: UILabelCustomFont {
+    // MARK: - UILabel Border
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
@@ -23,4 +22,5 @@ class UILabelBorder: UILabel {
             layer.borderColor = borderColor?.cgColor
         }
     }
+    
 }

@@ -9,8 +9,7 @@
 import Foundation
 
 extension String {
-    
-    //MARK:- Public Variables
+    // MARK: - Public variables
     var first: String {
         return String(characters.prefix(1))
     }
@@ -41,7 +40,7 @@ extension String {
         }
     }
     
-    //To Check Whether Email is valid or not
+    //To check whether email is valid or not
     func isEmail() -> Bool {
         if self.isEmptyString() {
             return false
@@ -52,7 +51,7 @@ extension String {
         return isValid
     }
     
-    //To Check Whether URL is valid
+    //To check whether URL is valid
     func isURL() -> Bool {
         let urlRegex = "(http|https)://((\\w)*|([0-9]*)|([-|_])*)+([\\.|/]((\\w)*|([0-9]*)|([-|_])*))+" as String
         let urlText = NSPredicate(format: "SELF MATCHES %@", urlRegex)
@@ -60,7 +59,7 @@ extension String {
         return isValid
     }
     
-    //To Check Whether Image URL is valid
+    //To check whether image URL is valid
     func isImageURL() -> Bool {
         if self.isURL() {
             if self.range(of: ".png") != nil || self.range(of: ".jpg") != nil || self.range(of: ".jpeg") != nil {
@@ -73,17 +72,17 @@ extension String {
         }
     }
     
-    //To Check Whether String is empty
+    //To check whether string is empty
     func isEmptyString() -> Bool {
         return self.stringByTrimmingWhiteSpace().characters.count == 0 ? true : false
     }
     
-    //Get string by removing White Space
+    //Get string by removing white space
     func stringByTrimmingWhiteSpace() -> String {
         return self.trimmingCharacters(in: .whitespaces)
     }
     
-    //Get string by removing White Space & New Line
+    //Get string by removing white space & new line
     func stringByTrimmingWhiteSpaceAndNewLine() -> String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }

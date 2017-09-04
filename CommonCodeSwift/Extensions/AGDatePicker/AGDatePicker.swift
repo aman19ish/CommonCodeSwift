@@ -12,15 +12,15 @@ let datePickerTopMargin: CGFloat = 0
 let pickerTopMargin: CGFloat = 0
 
 class AGDatePicker: UIView {
-    //MARK:- Closures
+    // MARK: - Closures
     private var callBack = {(response: Any?) -> () in
     }
     
-    //MARK:- Public Variables
+    // MARK: - Public variables
     var pickerView: UIDatePicker!
     var viewContainer: UIView!
     
-    //MARK:- Initializer Methods
+    // MARK: - Initializer methods
     convenience init(view: UIView, pickerMode mode: UIDatePickerMode, handler completionBlock: @escaping (_ response: Any?) -> ()) {
         UIApplication.shared.delegate?.window!?.endEditing(true)
         
@@ -68,7 +68,7 @@ class AGDatePicker: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //MARK:- Private Methods
+    // MARK: - Private methods
     private func getButton(xValue: CGFloat, buttonTitle title: String) -> UIButton {
         let button = UIButton(type: .custom)
         button.frame = CGRect(x: xValue, y: 1, width: 70, height: 35)
@@ -84,7 +84,7 @@ class AGDatePicker: UIView {
         return button
     }
     
-    //MARK:- Public Methods
+    // MARK: - Public methods
     func setMinimumDate(date: Date) {
         pickerView.minimumDate = date
     }
@@ -97,7 +97,7 @@ class AGDatePicker: UIView {
         pickerView.date = date
     }
     
-    //MARK:- IBAction Methods
+    // MARK: - IBAction methods
     func tapCancel(sender: UIButton) {
         UIApplication.shared.delegate?.window!?.endEditing(true)
         UIView.animate(withDuration: 0.25, delay: 0.0, options: .beginFromCurrentState, animations: {
@@ -124,4 +124,5 @@ class AGDatePicker: UIView {
             }
         }
     }
+    
 }

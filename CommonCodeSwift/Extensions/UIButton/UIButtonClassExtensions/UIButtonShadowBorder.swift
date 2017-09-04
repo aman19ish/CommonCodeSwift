@@ -9,9 +9,8 @@
 import UIKit
 @IBDesignable
 
-class UIButtonShadowBorder: UIButton {
-    
-    //MARK:- Shadow Radius Variables
+class UIButtonShadowBorder: UIButtonCustomFont {
+    // MARK: - Shadow radius variables
     @IBInspectable var shadowRadius: CGFloat = 0 {
         didSet {
             layer.shadowOffset = CGSize.init(width: 0.1, height: 0.1)
@@ -31,4 +30,5 @@ class UIButtonShadowBorder: UIButton {
             layer.shadowColor = shodowColor?.cgColor
         }
     }
+    
 }

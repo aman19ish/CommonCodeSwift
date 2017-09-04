@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C4E446D1EE00DAD004A8F78 /* UIBttonCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E44671EE00DAD004A8F78 /* UIBttonCornerRadius.swift */; };
 		4C4E446E1EE00DAD004A8F78 /* UIButtonBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E44681EE00DAD004A8F78 /* UIButtonBorder.swift */; };
 		4C4E446F1EE00DAD004A8F78 /* UIButtonClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E44691EE00DAD004A8F78 /* UIButtonClassExtension.swift */; };
 		4C4E44701EE00DAD004A8F78 /* UIButtonShadowBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E446A1EE00DAD004A8F78 /* UIButtonShadowBorder.swift */; };
@@ -24,6 +23,10 @@
 		4C77E6E81EE5661C000ADDFA /* UIImageViewRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6E71EE5661C000ADDFA /* UIImageViewRadius.swift */; };
 		4C77E6EA1EE56832000ADDFA /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6E91EE56832000ADDFA /* UIImageViewExtension.swift */; };
 		4C77E6EC1EE569C6000ADDFA /* UIImageViewExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77E6EB1EE569C6000ADDFA /* UIImageViewExtended.swift */; };
+		4C85A8C51F5D5F8800D93413 /* UILabelCustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9D1B881F4D421E00635C92 /* UILabelCustomFont.swift */; };
+		4C85A8C71F5D6C6600D93413 /* UIButtonCustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C85A8C61F5D6C6600D93413 /* UIButtonCustomFont.swift */; };
+		4C85A8CB1F5D736B00D93413 /* UIButtonCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C85A8CA1F5D736B00D93413 /* UIButtonCornerRadius.swift */; };
+		4C85A8CD1F5D763400D93413 /* UItextFieldCustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C85A8CC1F5D763400D93413 /* UItextFieldCustomFont.swift */; };
 		4C8794F11EDD52BA007EB30E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8794F01EDD52BA007EB30E /* ViewController.swift */; };
 		4C8794F41EDD52BA007EB30E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8794F21EDD52BA007EB30E /* Main.storyboard */; };
 		4C8794F71EDD52BA007EB30E /* CommonCodeSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C8794F51EDD52BA007EB30E /* CommonCodeSwift.xcdatamodeld */; };
@@ -35,6 +38,7 @@
 		4C89F2B91F30614D007B0D43 /* AGDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89F2B81F30614D007B0D43 /* AGDatePicker.swift */; };
 		4C8B07061F3979AF00EF1145 /* DateExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B07051F3979AF00EF1145 /* DateExtended.swift */; };
 		4C8C10B41F3DDA340034B4AE /* UINaviagtionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C10B31F3DDA340034B4AE /* UINaviagtionExtension.swift */; };
+		4C9D1B891F4D421E00635C92 /* UILabelCustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9D1B881F4D421E00635C92 /* UILabelCustomFont.swift */; };
 		4CB3F34F1F41AD67002AFF02 /* UINavigationProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3F34E1F41AD67002AFF02 /* UINavigationProperties.swift */; };
 		4CCC5D441EEFA6A600012218 /* UITextFieldBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D431EEFA6A600012218 /* UITextFieldBorder.swift */; };
 		4CCC5D461EEFA6BA00012218 /* UITextFieldClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */; };
@@ -67,7 +71,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4C4E44671EE00DAD004A8F78 /* UIBttonCornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBttonCornerRadius.swift; sourceTree = "<group>"; };
 		4C4E44681EE00DAD004A8F78 /* UIButtonBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonBorder.swift; sourceTree = "<group>"; };
 		4C4E44691EE00DAD004A8F78 /* UIButtonClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonClassExtension.swift; sourceTree = "<group>"; };
 		4C4E446A1EE00DAD004A8F78 /* UIButtonShadowBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonShadowBorder.swift; sourceTree = "<group>"; };
@@ -84,6 +87,9 @@
 		4C77E6E71EE5661C000ADDFA /* UIImageViewRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewRadius.swift; sourceTree = "<group>"; };
 		4C77E6E91EE56832000ADDFA /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		4C77E6EB1EE569C6000ADDFA /* UIImageViewExtended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtended.swift; sourceTree = "<group>"; };
+		4C85A8C61F5D6C6600D93413 /* UIButtonCustomFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonCustomFont.swift; sourceTree = "<group>"; };
+		4C85A8CA1F5D736B00D93413 /* UIButtonCornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonCornerRadius.swift; sourceTree = "<group>"; };
+		4C85A8CC1F5D763400D93413 /* UItextFieldCustomFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UItextFieldCustomFont.swift; sourceTree = "<group>"; };
 		4C8794EB1EDD52BA007EB30E /* CommonCodeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonCodeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8794F01EDD52BA007EB30E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C8794F31EDD52BA007EB30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 		4C89F2B81F30614D007B0D43 /* AGDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGDatePicker.swift; sourceTree = "<group>"; };
 		4C8B07051F3979AF00EF1145 /* DateExtended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtended.swift; sourceTree = "<group>"; };
 		4C8C10B31F3DDA340034B4AE /* UINaviagtionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINaviagtionExtension.swift; sourceTree = "<group>"; };
+		4C9D1B881F4D421E00635C92 /* UILabelCustomFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelCustomFont.swift; sourceTree = "<group>"; };
 		4CB3F34E1F41AD67002AFF02 /* UINavigationProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationProperties.swift; sourceTree = "<group>"; };
 		4CCC5D431EEFA6A600012218 /* UITextFieldBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldBorder.swift; sourceTree = "<group>"; };
 		4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldClassExtension.swift; sourceTree = "<group>"; };
@@ -154,9 +161,10 @@
 			children = (
 				4C4E44691EE00DAD004A8F78 /* UIButtonClassExtension.swift */,
 				4C4E446B1EE00DAD004A8F78 /* UIButtonSublayer.swift */,
-				4C4E44671EE00DAD004A8F78 /* UIBttonCornerRadius.swift */,
+				4C85A8CA1F5D736B00D93413 /* UIButtonCornerRadius.swift */,
 				4C4E44681EE00DAD004A8F78 /* UIButtonBorder.swift */,
 				4C4E446A1EE00DAD004A8F78 /* UIButtonShadowBorder.swift */,
+				4C85A8C61F5D6C6600D93413 /* UIButtonCustomFont.swift */,
 			);
 			path = UIButtonClassExtensions;
 			sourceTree = "<group>";
@@ -190,6 +198,7 @@
 		4C77E6D21EE5542B000ADDFA /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
+				4C9D1B881F4D421E00635C92 /* UILabelCustomFont.swift */,
 				4C77E6D31EE55480000ADDFA /* UILabelBorder.swift */,
 				4C77E6D51EE55502000ADDFA /* UILabelCornerRadius.swift */,
 				4C77E6D91EE555E3000ADDFA /* UILabelClassExtension.swift */,
@@ -371,6 +380,7 @@
 				4CCC5D451EEFA6BA00012218 /* UITextFieldClassExtension.swift */,
 				4CCC5D431EEFA6A600012218 /* UITextFieldBorder.swift */,
 				4CCC5D491EEFA78400012218 /* UITextFieldPadding.swift */,
+				4C85A8CC1F5D763400D93413 /* UItextFieldCustomFont.swift */,
 			);
 			path = UITextFieldClassExtension;
 			sourceTree = "<group>";
@@ -599,6 +609,7 @@
 				4C77E6E11EE55A18000ADDFA /* UIImageExtended.swift in Sources */,
 				4CCC5D551EEFE02A00012218 /* UITextViewClassExtension.swift in Sources */,
 				4C8B07061F3979AF00EF1145 /* DateExtended.swift in Sources */,
+				4C9D1B891F4D421E00635C92 /* UILabelCustomFont.swift in Sources */,
 				4C6209D31EF8E893008DB067 /* GlobalEnums.swift in Sources */,
 				4CCC5D5F1EEFF75700012218 /* UIViewClassExtension.swift in Sources */,
 				4CCC5D441EEFA6A600012218 /* UITextFieldBorder.swift in Sources */,
@@ -610,9 +621,12 @@
 				4C52B7781F3327D700F87031 /* NSMutableAttributedStringExtended.swift in Sources */,
 				4C8C10B41F3DDA340034B4AE /* UINaviagtionExtension.swift in Sources */,
 				4CCC5D4A1EEFA78400012218 /* UITextFieldPadding.swift in Sources */,
+				4C85A8CB1F5D736B00D93413 /* UIButtonCornerRadius.swift in Sources */,
+				4C85A8CD1F5D763400D93413 /* UItextFieldCustomFont.swift in Sources */,
 				4C77E6E81EE5661C000ADDFA /* UIImageViewRadius.swift in Sources */,
 				4CCC5D571EEFE05700012218 /* UItextViewBorder.swift in Sources */,
 				4CDEB7E41F319AE000290BDB /* GetCurrentLocation.swift in Sources */,
+				4C85A8C71F5D6C6600D93413 /* UIButtonCustomFont.swift in Sources */,
 				4C8794F71EDD52BA007EB30E /* CommonCodeSwift.xcdatamodeld in Sources */,
 				4CCC5D611EEFF76D00012218 /* UIViewBorder.swift in Sources */,
 				4CB3F34F1F41AD67002AFF02 /* UINavigationProperties.swift in Sources */,
@@ -623,7 +637,6 @@
 				4C89F2B91F30614D007B0D43 /* AGDatePicker.swift in Sources */,
 				4C4E446E1EE00DAD004A8F78 /* UIButtonBorder.swift in Sources */,
 				4CDEB8231F31D75100290BDB /* LocationHelper.swift in Sources */,
-				4C4E446D1EE00DAD004A8F78 /* UIBttonCornerRadius.swift in Sources */,
 				4C77E6EA1EE56832000ADDFA /* UIImageViewExtension.swift in Sources */,
 				4CCC5D4E1EEFD1EE00012218 /* UITableViewCellExtension.swift in Sources */,
 				4C8794F11EDD52BA007EB30E /* ViewController.swift in Sources */,
@@ -643,6 +656,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C85A8C51F5D5F8800D93413 /* UILabelCustomFont.swift in Sources */,
 				4C8795121EDD52BA007EB30E /* CommonCodeSwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

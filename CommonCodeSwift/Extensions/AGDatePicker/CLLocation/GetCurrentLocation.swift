@@ -16,12 +16,11 @@ enum LocationAuthorizedType {
 }
 
 class GetCurrentLocation: CLLocationManager {
-    
-    //MARK:- Public Variables
+    // MARK:- Public variables
     var currentLocation: CLLocation?
     var authorizedType: LocationAuthorizedType = .WhenInUse  //Set according to info.Plist permision for location
     
-    //MARK:- Private Variables
+    // MARK:- Private variables
     fileprivate var sendLocation = {(_ location: CLLocation?) -> () in }
     
     static let sharedInstance = GetCurrentLocation()
@@ -74,9 +73,10 @@ class GetCurrentLocation: CLLocationManager {
         }
         self.startUpdatingLocation()
     }
+    
 }
 
-//MARK:- CLLocation Manager Delegate Methods
+// MARK:- CLLocation manager delegate methods
 extension GetCurrentLocation: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         self.stopUpdatingLocation()

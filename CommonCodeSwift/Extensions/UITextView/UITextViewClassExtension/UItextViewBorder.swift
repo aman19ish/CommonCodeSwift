@@ -10,8 +10,7 @@ import UIKit
 @IBDesignable
 
 class UItextViewBorder: UITextView {
-    
-    //MARK:- TextView Border
+    // MARK: - TextView border
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
@@ -23,4 +22,5 @@ class UItextViewBorder: UITextView {
             layer.borderColor = borderColor?.cgColor
         }
     }
+    
 }

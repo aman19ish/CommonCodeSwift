@@ -11,14 +11,14 @@ import UIKit
 
 class UIButtonBorder: UIButtonShadowBorder {
 
-    //MARK:- Border Width
+    // MARK: - Border width
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
         }
     }
     
-    //MARK:-Border Color
+    // MARK: - Border color
     @IBInspectable var borderColor: UIColor? {
         didSet {
             layer.borderColor = borderColor?.cgColor

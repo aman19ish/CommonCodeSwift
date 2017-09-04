@@ -10,8 +10,7 @@ import UIKit
 @IBDesignable
 
 class UITextFieldBorder: UITextFieldPadding {
-
-    //MARK:- TextField Border width and color
+    // MARK: - TextField Border width and color
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth

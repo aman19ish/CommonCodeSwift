@@ -10,8 +10,7 @@ import UIKit
 @IBDesignable
 
 class UIImageViewBorder: UIImageView {
-    
-    //MARK:- UIImageBorder
+    // MARK: - UIImageBorder
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
@@ -23,4 +22,5 @@ class UIImageViewBorder: UIImageView {
             layer.borderColor = borderColor?.cgColor
         }
     }
+    
 }

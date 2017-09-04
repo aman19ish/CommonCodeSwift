@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 
 class LocationHelper: NSObject {
-    //MARK:- Location Helper Methods
+    // MARK: - Location helper methods
     func getLocationNameFrom(latitute: Double, longitude: Double, completion: @escaping (_ dicOfLocation: CLPlacemark)->()) {
         let ceo = CLGeocoder()
         let loc = CLLocation(latitude: latitute, longitude: longitude)

@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-//MARK:- Enums
+// MARK: - Enums
 enum LeftBarItem {
     case back
     case menu
@@ -46,7 +46,7 @@ struct NavigationProperties {
     var titleFont: UIFont! = UIFont.systemFont(ofSize: 15.0)
 }
 
-//MARK:- Delegate
+// MARK: - Delegate
 protocol UINCExtendedDelegate: UINavigationControllerDelegate {
     func navigationBarButtonItemClicked(_ buttonType: NavigationBarButton, sender: UIButton)
 }
@@ -55,17 +55,7 @@ private var navigationButton: UINCExtendedDelegate?
 private var pro: UINavigationProperties?
 
 extension UINavigationController: UINavigationControllerDelegate {
-    
-    
-//    var pro: UINavigationProperties? {
-//        get{
-//          return objc_getAssociatedObject(self, &self.pro) as? UINavigationProperties
-//        }
-//        set(data){
-//            objc_getAssociatedObject(self, <#T##key: UnsafeRawPointer!##UnsafeRawPointer!#>)
-//        }
-//    }
-    //MARK:- View Life Cycle Methods
+    // MARK: - View life cycle methods
     override open func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
@@ -80,7 +70,7 @@ extension UINavigationController: UINavigationControllerDelegate {
     }
     
     
-    //MARK:- Public Methods
+    // MARK: - Public methods
     func setupNavigationBar(navItem: UINavigationItem, title: String, leftBarButtonType: LeftBarItem, rightBarItemType: RightBarItem, rightBarTitle: String?, arrRightBarImages: [String]?) {
         let properties = NavigationProperties()
         self.interactivePopGestureRecognizer?.isEnabled = true
@@ -94,7 +84,7 @@ extension UINavigationController: UINavigationControllerDelegate {
         
         var leftBarItems = [UIBarButtonItem]()
         
-        //LeftBar Button Initialization
+        //LeftBar button initialization
         switch leftBarButtonType {
         case .back:
             leftBarItems.append(getBarButton(withImage: "back", andSelector: #selector(clickBackButton(sender:))))
@@ -121,7 +111,7 @@ extension UINavigationController: UINavigationControllerDelegate {
         
         var rightBarItems = [UIBarButtonItem]()
 
-        //RightBar Button Initialization
+        //RightBar button initialization
         switch rightBarItemType {
         case .text:
             let rightBarButton = UIBarButtonItem(title: rightBarTitle, style: .done, target: self, action: #selector(clickRBButtonWithText(sender:)))
@@ -179,7 +169,7 @@ extension UINavigationController: UINavigationControllerDelegate {
         isNavigationBarHidden = isHidden
     }
     
-    //MARK:- Private Methods
+    // MARK: - Private methods
     fileprivate func getBarButton(withImage strImageName: String, andSelector selector:(Selector)) -> UIBarButtonItem {
         let viewBarButton = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
         
@@ -223,7 +213,7 @@ extension UINavigationController: UINavigationControllerDelegate {
         return barButton
     }
 
-    //MARK:- ----------IBAction Methods--------
+    // MARK: - IBActions
     func clickBackButton(sender: UIButton) {
 //        TANetworkManager.sharedInstance.cancelAllRequests {
 //            DispatchQueue.main.async {
@@ -259,4 +249,5 @@ extension UINavigationController: UINavigationControllerDelegate {
     func clickThirdRBButton(sender: UIButton) {
         customDelegate?.navigationBarButtonItemClicked(.rightThird, sender: sender)
     }
+    
 }

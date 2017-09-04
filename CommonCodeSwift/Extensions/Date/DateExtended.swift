@@ -16,8 +16,7 @@ let D_Week = D_Day * 7
 let D_Year = 31556926.0
 
 extension Date {
-
-    //MARK: Class Methods
+    // MARK: - Class methods
     static func currentCalendar() -> Calendar {
         var sharedCalendar: Calendar? = nil
         if (sharedCalendar == nil) {
@@ -35,4 +34,5 @@ extension Date {
         let newDate = Calendar.current.date(byAdding: dateComponents, to: self, wrappingComponents: true)
         return newDate!
     }
+    
 }

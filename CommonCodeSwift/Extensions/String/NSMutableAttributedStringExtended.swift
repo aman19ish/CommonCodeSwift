@@ -9,8 +9,7 @@
 import Foundation
 import UIKit
 
-extension NSMutableAttributedString
-{
+extension NSMutableAttributedString {
     func bold(_ text: String, font: UIFont) -> NSMutableAttributedString {
         let attribute:[String:AnyObject] = [NSFontAttributeName : font]
         let boldString = NSMutableAttributedString(string: "\(text)", attributes: attribute)
