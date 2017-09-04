@@ -46,6 +46,7 @@ UILabelExtesion features have:
 * Corner radius
 * Border width
 * Border color
+* Custom font 
 
 ## UIButtonExtension
 UIBUttonExtension features have:
@@ -63,6 +64,7 @@ UIBUttonExtension features have:
 * Border color
 * Shadow radius 
 * Shadow color
+* CUston title font
 
 ## UICollectionViewExtension
 UICollectionView Extension Have a single function which is use for get the cell identifier name, but condition is that class name and cell identifire name must be same.
@@ -86,6 +88,7 @@ UITextFieldExtension features have:
 UITextViewExtension features have:
 * Border Width
 * Border Color
+* Custom font
 
 ## UIViewExtension
 UIViewExtension features have:
@@ -95,10 +98,6 @@ UIViewExtension features have:
 * MakeCircle
 * AsPerWidthMakeCircle
 
-## DateExtension
-## StringExtended
-## NSMutableAttribuedString
-## AGDatePicker
 ## UINaviagtionExtension
 
 For Navigation bar call this  in app delegate and change according to you:
